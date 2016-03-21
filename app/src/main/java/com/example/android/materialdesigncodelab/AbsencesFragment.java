@@ -1,89 +1,130 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.example.android.materialdesigncodelab;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
-/**
- * Provides UI for the view with List.
- */
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonObjectRequest;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class AbsencesFragment extends Fragment {
+    private boolean called = false;
+    private List<Absence> absenceList = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private AbsenceAdapter mAdapter;
+    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/rhsstu/api/public/getabsencelist.php";
+    private static String TAG = MainActivity.class.getSimpleName();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(
                 R.layout.recycler_view_absences, container, false);
-        ContentAdapter adapter = new ContentAdapter();
-        recyclerView.setAdapter(adapter);
+
+        mAdapter = new AbsenceAdapter(absenceList);
+        recyclerView.setAdapter(mAdapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        if(!called)
+            makeJsonObjectRequest();
+        absenceData();
+
         return recyclerView;
+
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public ViewHolder(LayoutInflater inflater, ViewGroup parent) {
-            super(inflater.inflate(R.layout.item_list, parent, false));
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Context context = v.getContext();
-                    Intent intent = new Intent(context, DetailActivity.class);
-                    context.startActivity(intent);
+    private void makeJsonObjectRequest() {
+
+        called = true;
+        final JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
+                urlJsonObj, null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d(TAG, response.toString());
+
+                try {
+
+
+                    JSONArray absencesToday = response.getJSONArray("absences");
+                    String name = "", location = "", reason = "";
+
+                    for (int i = 0; i < absencesToday.length(); i++) {
+                        try {
+
+                            name = absencesToday.getJSONObject(i).getString("name");
+                            JSONArray infoInAbsence = new JSONArray(absencesToday.getJSONObject(i).getString("info"));
+
+                            for (int j = 0; j < infoInAbsence.length(); j++) {
+                                try {
+                                     location = infoInAbsence.getJSONObject(j).getString("location");
+                                     reason = infoInAbsence.getJSONObject(j).getString("reason");
+
+
+
+
+                                } catch (JSONException e) {
+
+                                }
+                                Absence temp = new Absence(name, location, reason);
+                                absenceList.add(temp);
+                                mAdapter.notifyDataSetChanged();
+                            }
+                        } catch (JSONException e) {
+
+                        }
+                    }
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+
                 }
-            });
+            }
+        }, new Response.ErrorListener() {
 
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                VolleyLog.d(TAG, "Error: " + error.getMessage());
 
-        }
+                // hide the progress dialog
+            }
+        });
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(jsonObjReq);
     }
 
-    /**
-     * Adapter to display recycler view.
-     */
-    public static class ContentAdapter extends RecyclerView.Adapter<ViewHolder> {
-        // Set numbers of List in RecyclerView.
-        private static final int LENGTH = 18;
 
-        public ContentAdapter() {
-        }
+    private void absenceData() {
 
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ViewHolder(LayoutInflater.from(parent.getContext()), parent);
-        }
 
-        @Override
-        public void onBindViewHolder(ViewHolder holder, int position) {
-            // no-op
-        }
-
-        @Override
-        public int getItemCount() {
-            return LENGTH;
-        }
+        mAdapter.notifyDataSetChanged();
     }
-
 }

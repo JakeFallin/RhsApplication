@@ -1,21 +1,8 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 
 package com.example.android.materialdesigncodelab;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -29,7 +16,9 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,64 +26,47 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.android.volley.Request.Method;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
-
+import java.util.Set;
 
 /**
- * Provides UI for the main screen.
+ * Created by Jake on 3/14/2016.
  */
-public class MainActivity extends AppCompatActivity {
+public class TeacherSearch extends ActionBarActivity implements SearchView.OnQueryTextListener {
 
-
-
-    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/rhsstu/api/public/mobile/getdashboard.php";
+    private MenuItem searchMenu;
+    public static boolean searchActive = false;
+    private ArrayList<Integer> realIndexesOfSearchResults; // To keep track of real indexes in searched notes
     private DrawerLayout mDrawerLayout;
     // Progress dialog
     private ProgressDialog pDialog;
     // temporary string to show the parsed response
-    public String jsonResponse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.search);
         // Adding Toolbar to Main screen
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
         setSupportActionBar(toolbar);
         // Setting ViewPager for each Tabs
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
+
         // Set Tabs inside Toolbar
-        TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
-        tabs.setupWithViewPager(viewPager);
+
         // Create Navigation drawer and inlfate layout
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view3);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer3);
         // Adding menu icon to Toolbar
         ActionBar supportActionBar = getSupportActionBar();
         if (supportActionBar != null) {
             supportActionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
             supportActionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+
+        Menu menu = toolbar.getMenu();
+        searchMenu = menu.findItem(R.id.action_search);
+        
+
 
         // Set behavior of Navigation drawer
         navigationView.setNavigationItemSelectedListener(
@@ -114,30 +86,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         // Adding Floating Action Button to bottom right of main view
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Snackbar.make(v, jsonResponse,
-                        Snackbar.LENGTH_LONG).show();
-            }
-        });
     }
 
-    //JSON
 
 
-    // Add Fragments to Tabs
-    private void setupViewPager(ViewPager viewPager) {
-        Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new InfoFragment(), "Information");
-        adapter.addFragment(new ScheduleFragment(), "Today's Schedule");
-        adapter.addFragment(new AbsencesFragment(), "Absent Teachers");
-        viewPager.setAdapter(adapter);
-    }
 
-    static class Adapter extends FragmentPagerAdapter {
+    class Adapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
@@ -169,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main_search, menu);
         return true;
     }
 
@@ -180,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Intent intent = new Intent(MainActivity.this, Settings.class);
+        if (id == R.id.action_settings3) {
+            Intent intent = new Intent(TeacherSearch.this, Settings.class);
             startActivity(intent);
 
         } else if (id == android.R.id.home) {

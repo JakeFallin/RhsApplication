@@ -13,30 +13,28 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/period"
+        android:id="@+id/name"
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Period 1" />
-
+        android:text="Mr. Smith" />
 
     <TextView
-        android:id="@+id/start"
-        android:layout_below="@id/period"
-        android:textSize="15dp"
+        android:id="@+id/location"
+        android:textSize="16dp"
+        android:layout_below="@id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="9:50" />
+        android:text="Campus Center" />
 
     <TextView
-        android:id="@+id/end"
-        android:text="10:50"
-        android:textSize="15dp"
+        android:id="@+id/reason"
+        android:textSize="16dp"
+        android:text="All Periods"
         android:layout_width="wrap_content"
-        android:layout_below="@id/period"
-        android:paddingLeft="50dp"
+        android:layout_below="@id/location"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>

@@ -18,14 +18,14 @@
         <item
             android:icon="@drawable/ic_home_black_24dp"
             android:tint="@color/button_grey"
-            android:title="One" />
-        <item
-            android:icon="@drawable/ic_favorite_black_24dp"
-            android:tint="@color/button_grey"
-            android:title="Two" />
+            android:title="Overview" />
         <item
             android:icon="@drawable/ic_bookmark_border_black_24dp"
             android:tint="@color/button_grey"
-            android:title="Three" />
+            android:title="Links" />
+        <item
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:tint="@color/button_grey"
+            android:title="My Teachers" />
     </group>
 </menu>
