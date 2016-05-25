@@ -24,15 +24,15 @@ public final class R {
 		public static final int pugnotification_ic_placeholder = 0x7f0200bf;
 	}
 	public static final class id {
-		public static final int notification_content_information = 0x7f100144;
-		public static final int notification_content_main = 0x7f100142;
-		public static final int notification_img_background = 0x7f100143;
-		public static final int notification_img_icon = 0x7f100146;
-		public static final int notification_text_message = 0x7f100147;
-		public static final int notification_text_title = 0x7f100145;
+		public static final int notification_content_information = 0x7f100147;
+		public static final int notification_content_main = 0x7f100145;
+		public static final int notification_img_background = 0x7f100146;
+		public static final int notification_img_icon = 0x7f100149;
+		public static final int notification_text_message = 0x7f10014a;
+		public static final int notification_text_title = 0x7f100148;
 	}
 	public static final class layout {
-		public static final int pugnotification_custom = 0x7f040053;
+		public static final int pugnotification_custom = 0x7f040056;
 	}
 	public static final class string {
 		public static final int pugnotification_key_voice_reply = 0x7f08008c;

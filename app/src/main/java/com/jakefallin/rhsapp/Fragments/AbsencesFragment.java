@@ -7,17 +7,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ExpandableListView;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -26,16 +25,11 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.jakefallin.rhsapp.Adapters.AbsenceAdapter;
-import com.jakefallin.rhsapp.Adapters.ScheduleAdapter;
 import com.jakefallin.rhsapp.MainActivity;
-import com.jakefallin.rhsapp.Objects.ClassTeacherItem;
-import com.jakefallin.rhsapp.Objects.ExploreBean;
-import com.jakefallin.rhsapp.Objects.MenuBean;
+import com.jakefallin.rhsapp.Objects.AbsenceBean;
+import com.jakefallin.rhsapp.Objects.AbsenceInfoBean;
 import com.jakefallin.rhsapp.Objects.Schedule;
-import com.jakefallin.rhsapp.Objects.Startup;
 import com.jakefallin.rhsapp.R;
-import com.jakefallin.rhsapp.Objects.Absence;
 import com.jakefallin.rhsapp.Util.AppController;
 import com.pacific.adapter.ExpandableAdapter;
 import com.pacific.adapter.ExpandableAdapterHelper;
@@ -48,14 +42,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.goncalves.pugnotification.notification.Load;
-import br.com.goncalves.pugnotification.notification.PugNotification;
-
 public class AbsencesFragment extends Fragment {
+    List<AbsenceBean> list0;
     private boolean called = false;
-    private List<Absence> absenceList;
-    private RecyclerView recyclerView;
-    private AbsenceAdapter mAdapter;
+    private List<AbsenceBean> absenceList = new ArrayList<>();
+    private ExpandableListView listView;
+    private ExpandableAdapter<AbsenceBean, AbsenceInfoBean> adapter;
     private String urlJsonObj = "http://app.ridgewood.k12.nj.us/rhsstu/api/public/getabsencelist.php";
     private static String TAG = MainActivity.class.getSimpleName();
     private ArrayList<Schedule> arrayList;
@@ -65,31 +57,80 @@ public class AbsencesFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        adapter = new ExpandableAdapter<AbsenceBean, AbsenceInfoBean>(getContext(), R.layout.absence_expanded_base_view, R.layout.absence_child) {
 
+            @Override
+            protected List<AbsenceInfoBean> getChildren(int groupPosition) {
+                return get(groupPosition).getAbsenceInfoBeanList();
+            }
+
+            @Override
+            protected void convertGroupView(final boolean isExpanded, final ExpandableAdapterHelper helper, AbsenceBean item) {
+                helper.setText(R.id.teach_name, item.getName())
+                        .getItemView().setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (isExpanded) {
+                            listView.collapseGroup(helper.getGroupPosition());
+                        } else {
+                            listView.expandGroup(helper.getGroupPosition());
+                        }
+                    }
+                });
+                helper.getItemView().setTag("hello world");
+            }
+
+            @Override
+            protected void convertChildView(boolean isLastChild, final ExpandableAdapterHelper helper, AbsenceInfoBean item) {
+                helper.setText(R.id.loc, item.getLocation())
+                        .setText(R.id.time, item.getPeriod())
+                        .getItemView().setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        clickSnack(helper.getGroupPosition(), helper.getChildPosition());
+                    }
+                });
+                helper.getItemView().setTag("hello world");
+            }
+        };
+        list0 = new ArrayList<>();
+        makeJsonObjectRequest();
+    }
+    public void clickSnack(int g, int c) {
+        String str = "click group " + String.valueOf(g) + " child " + String.valueOf(c);
+        Snackbar.make(listView, str, Snackbar.LENGTH_SHORT)
+                .setAction("Close", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                    }
+                }).show();
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        RecyclerView recyclerView = (RecyclerView) inflater.inflate(
-                R.layout.fragment_absences, container, false);
+        View view = inflater.inflate(R.layout.absence_expanded_list_view, container, false);
 
-        absenceList = new ArrayList<>();
-        mAdapter = new AbsenceAdapter(absenceList);
-        recyclerView.setAdapter(mAdapter);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        adapter.notifyDataSetChanged();
 
-        makeJsonObjectRequest();
-        absenceData();
+        listView = (ExpandableListView) view.findViewById(R.id.abs_list);
+        listView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+            @Override
+            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+                return false;
+            }
+        });
 
-        save();
 
-        return recyclerView;
+        listView.setAdapter(adapter);
 
+        return view;
     }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
 
 
     private void makeJsonObjectRequest() {
@@ -105,27 +146,27 @@ public class AbsencesFragment extends Fragment {
                 try {
                     JSONArray absencesToday = response.getJSONArray("absences");
                     String name = "";
-                    String nextName = "New Name String";
-                    List<Pair<String,String>> locations = new ArrayList<Pair<String, String>>();
-                    Pair <String, String> Loc;
-                    count++;
+                    AbsenceInfoBean Loc;
 
                     for (int i = 0; i < absencesToday.length(); i++) {
                         try {
 
                             name = absencesToday.getJSONObject(i).getString("name");
+                            List<AbsenceInfoBean> locations = new ArrayList<>();
                             JSONArray infoInAbsence = new JSONArray(absencesToday.getJSONObject(i).getString("info"));
+                            AbsenceBean temp = new AbsenceBean(name);
 
                             for (int j = 0; j < infoInAbsence.length(); j++) {
                                 try {
-                                    Loc = new Pair(infoInAbsence.getJSONObject(j).getString("location"), infoInAbsence.getJSONObject(j).getString("reason"));
+                                    Loc = new AbsenceInfoBean(infoInAbsence.getJSONObject(j).getString("location"), infoInAbsence.getJSONObject(j).getString("reason"));
                                     locations.add(Loc);
                                 } catch (JSONException e) {
                                 }
-                                Absence temp = new Absence(name, locations);
-                                absenceList.add(temp);
-                                mAdapter.notifyDataSetChanged();
                             }
+                            temp.setAbsenceInfoBeanList(locations);
+                            list0.add(temp);
+                            adapter.add(temp);
+                            adapter.notifyDataSetChanged();
                         } catch (JSONException e) {
                         }
                     }
@@ -146,7 +187,7 @@ public class AbsencesFragment extends Fragment {
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(jsonObjReq);
 
-        mAdapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
 
 
         ArrayList<String> aSchedule = new ArrayList<>();
@@ -168,7 +209,7 @@ public class AbsencesFragment extends Fragment {
     private void absenceData() {
 
 
-        mAdapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
     }
 
     public void makeNotification(ArrayList<String> s)

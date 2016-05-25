@@ -5,21 +5,14 @@ import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
-import com.jakefallin.rhsapp.Objects.Absence;
 import com.jakefallin.rhsapp.Objects.Startup;
 import com.jakefallin.rhsapp.R;
-import com.orhanobut.dialogplus.OnClickListener;
-
-import java.util.List;
 
 public class DialogAdapter extends BaseAdapter {
 

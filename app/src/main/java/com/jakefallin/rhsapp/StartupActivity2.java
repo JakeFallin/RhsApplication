@@ -1,7 +1,6 @@
 package com.jakefallin.rhsapp;
 
 
-import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.Fragment;
@@ -12,9 +11,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 
@@ -23,48 +20,30 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SwitchCompat;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
-import android.view.ViewPropertyAnimator;
-import android.view.Window;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.jakefallin.rhsapp.Adapters.DialogAdapter;
-import android.widget.FrameLayout;
-import android.widget.Spinner;
 
-import com.google.gson.Gson;
 import com.jakefallin.rhsapp.Adapters.StartupAdapter;
 import com.jakefallin.rhsapp.Dialog.CreateDialog;
-import com.jakefallin.rhsapp.Objects.Absence;
 import com.jakefallin.rhsapp.Objects.Startup;
 import com.jakefallin.rhsapp.Util.AppController;
 import com.rohit.recycleritemclicksupport.RecyclerItemClickSupport;
 
-import java.lang.reflect.Type;
-import com.jakefallin.rhsapp.Util.RecyclerItemClickListener;
-
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Jake on 4/26/2016.

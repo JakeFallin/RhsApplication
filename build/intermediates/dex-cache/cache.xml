@@ -1,3 +1,411 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.4.0_13dfd6014646c40611e044df9858994813b3d2fd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\pub.devrel\easygoogle\0.2.4\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e020d5ceb06a44dafb7ac1930d069be8d0b1d39a">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\pub.devrel-easygoogle-0.2.4_0b59a42d12b62b81fa33d22841f47d3d38438c74\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.4.0_09feaaa25f09b5ab6fe026f3a3f7abee9981b43b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.tonicartos\superslim\0.4.13\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8adfd82229a5f0a129469305587557199017219e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.tonicartos-superslim-0.4.13_b55a8ab58db379234d13596f2eea15b723965cb4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_0f6be780ba456514b7b0868ff2df96be7c1bf413\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_2db0e2e3904a35f00b546d985142a61c34b0472f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_db0a225ba663f184958424917bd2b128bbb52e8b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_174ec8fbe1ed18dbc13122be0faeb99ecabe0605\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\se.emilsjolander\stickylistheaders\2.7.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3bdf77dbe58e0ec53a0178de532372e7c00859b9">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\se.emilsjolander-stickylistheaders-2.7.0_fba48f6349653449c213da7f903c245bf0fe90fb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_8ff38cf0dbc1692ccec2f43d529b2debb3056d49\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.github.fafaldo\fab-toolbar\1.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="914655ea8bbd3367dd5cebf2282e636cd3d95389">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.fafaldo-fab-toolbar-1.2.0_a627794eb8c52a31477e58e1d1b1d8bbd576a04a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_482bc337e08f66f602d6e80420b223b889245a56\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.github.asyl.animation\arcanimator\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="31dbe885ef6a9d6a88412750e85784f60b95cb90">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.asyl.animation-arcanimator-1.0.0_40cfb1824c2013f52a0eaded211d0f1bf5f7e9ca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_cffb6b2334284e7923c7506c8c9b446d9388685a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_468de713d8f7700d2a7e2289762082248a150e76\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_e115b8c2e0d9b91a528309edb1dcf0adc76e94e1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.github.halysongoncalves\pugnotification\1.8.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="dd72e971ae6a7defa5e184470b749583c9a31923">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.halysongoncalves-pugnotification-1.8.1_7dfcc7abadbce0cfd88fc98622022365bfeef4ac\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.4.0_c78500d08cf71af4cd2c6649632030297235b63b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_ecb8d4272abcf0d0ae4307f5d008b40fb51b1b06\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\2.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a95fd025efad7b05be3d29737bec37652e0fdb9e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wdullaer-materialdatetimepicker-2.3.0_d72f5fa81e8fff90362c19e3832896d366c71064\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_ac95ecef0328ad8e60b5c8a4bae5c8a0afd97370\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-8.4.0_e85664b128211f8edbba5a218825ae5c4aeeefdc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.github.medyo\fancybuttons\1.8\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="58e388ae2d0befce87e90395f775ddec05e72b6c">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.medyo-fancybuttons-1.8_b8fc057ef048b251aa1a2805f512de9f5a7d9fd5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.4.0_4511c29a61db3bc96a44df239aa17c2cf8000368\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_697ba404a655b1db5e1429e62808552a86d9a16c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_f9860d370afcb01f38a86e644e5a7a5eacc06889\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.orhanobut\dialogplus\1.11\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="184f86117c6463267c1f0deba84d4853cb165c40">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.orhanobut-dialogplus-1.11_a187f2aeae80b91824ecc14f5bb8b106fc706d7d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.4.0_fc397873a65af5ba53f354e1f8664f3cbf921200\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.ogaclejapan.smarttablayout\utils-v4\1.6.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7b6793eb8e6071cd11334f1b0af8dca2e662a561">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.ogaclejapan.smarttablayout-utils-v4-1.6.0_5aee5a165141992037f081508cc6df5866adb231\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_8524f058aceb940cacbda235027416cbedf9c1f2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_969d749322cacfab31b3e2921c1925e72d23ffbb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_1215966ab384b694ceca0abffb14c3d257bef1eb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-8.4.0_dadbcfc2960466d6de782c6b0c68af2eb9cb11c1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-8.4.0_12ddc68ecfe238183361ea064e022e067203f50c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-8.4.0_943e729285933d47f59297f274be77cccab43f93\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_381ff9027971e10b48e72a3ffe37a449635ca405\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.rohit.recycleritemclicksupport\recycleritemclicksupport\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="15597ee56eff82c59895b0f46aa6e19d6dbe1a24">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rohit.recycleritemclicksupport-recycleritemclicksupport-1.0.1_45979f7457df428defd1edf9dc94a9339b646161\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_cec9abcc107ecef5478a76a5bfea764c7bac499b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_8994380172193cc978da530aa4959c11d54abda9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-8.4.0_660e680dfa8e9601be24a15fd8dddad2a8b9e058\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.4.0_c83fb58e2d1a6a2c87b1ca59c327232cb5f3b666\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-8.4.0_4b9348a8ebc8af2abfeb86a37dfddfdcc1f2d423\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_b06b4d6d94c2a83191445376f26f3faae10e7109\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0ad106b25aef6383bd224b3f13c9cebada2cae9">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e740cf4c764b9b7eec74b65f7e76056e39502f33\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.ogaclejapan.smarttablayout\library\1.6.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="773103b47908c3026873309dd5d968b7fc6556eb">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.ogaclejapan.smarttablayout-library-1.6.0_ec74320bc0f92e4d89eaef549e6f1efb1afe2b5d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_af1d33c49ba6eafe212d9e1a4ad15b3bf73be3f2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b8c300a56ebf1cc47b01d55860778e79ccc31907">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c9e28016587ed4a21bb9537d8f9c62a92d5d6e7f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_97c50775dda7ba0cab45c0247fa5acc6f72d74d8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_668f7ac2e6dc9ec2ce05a1d3bc0420ef015df4ac\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.4.0_11461a5f3ad50ae2a685b6af8fe9d5a971ecb358\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_c13137316da96aa47b708d354c66f02d9fe849f9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.9.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d4b681a6084ef53d2825520fc77fcaddde351f64">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getbase-floatingactionbutton-1.9.1_ec04771b9d78508f52cf6966964bb565ca5b3e7e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_27d2dae05eba75dd84e379f3afea3aed773c2f93\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_f46db0ebeaabd435084e6a3f8feb32b11cc5f7f0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.gordonwong\material-sheet-fab\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="34fc70f7f1d882154d876ea763f05977d9945699">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.gordonwong-material-sheet-fab-1.2.1_708df6714f1c64cafe3d19179f6c1da30b4db700\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.github.thepacific\adapter\1.0.5\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e6b8cfa07508fcb50e5361bc3c78918c86ea6b48">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.thepacific-adapter-1.0.5_e3f7a96cf853c6c052b0e643bbd06b20c3521f63\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_066a8e5fcbab9434504c613be68c547a51e9e500\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_89f1afdedac2481bda7774dce384962e83853222\classes.dex" />
+    </item>
+
+</items>
