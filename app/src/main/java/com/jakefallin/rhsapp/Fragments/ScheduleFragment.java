@@ -157,29 +157,29 @@ public class ScheduleFragment extends Fragment {
 
                             Startup c = getData(p);
 
-                            if (p.equals("Lunch") || c.getTitle().equals(""))
-                            {
+                            if (p.equals("Lunch") || c.getTitle().equals("")) {
                                 Schedule temp = new Schedule(p, s, e);
                                 scheduleListToday.add(temp);
                                 mAdapterToday.notifyDataSetChanged();
-                            } else if (!p.contains("Period")) {
+                            } else if (!p.matches(".*\\d+.*")) {
 
                                 Schedule temp = new Schedule(p, s, e);
                                 scheduleListToday.add(temp);
                                 mAdapterToday.notifyDataSetChanged();
+                            } else {
 
-                            } else  {
 
-                                if (c.getTitle().equals("")) {
-                                    Schedule temp = new Schedule(p, s, e);
-                                    scheduleListToday.add(temp);
-                                    mAdapterToday.notifyDataSetChanged();
-                                }
-                                    Schedule temp = new Schedule(c.getTitle(), c.getDescription(), s, e);
-                                    scheduleListToday.add(temp);
-                                    mAdapterToday.notifyDataSetChanged();
-
+                            if (c.getTitle().equals("")) {
+                                Schedule temp = new Schedule(p, s, e);
+                                scheduleListToday.add(temp);
+                                mAdapterToday.notifyDataSetChanged();
                             }
+                            Schedule temp = new Schedule(c.getTitle(), c.getDescription(), s, e);
+                            scheduleListToday.add(temp);
+                            mAdapterToday.notifyDataSetChanged();
+
+                        }
+
                             }catch(JSONException e){
                             }
                     }
