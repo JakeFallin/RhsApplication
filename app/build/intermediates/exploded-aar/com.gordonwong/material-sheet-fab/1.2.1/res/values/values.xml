@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Gordon/Documents/git%20workspace/material-sheet-fab-git/material-sheet-fab/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="background_dim_overlay">#44000000</color>
+    <!-- From: file:/C:/Users/Gordon/Documents/git%20workspace/material-sheet-fab-git/material-sheet-fab/src/main/res/values/refs.xml -->
+    <eat-comment/>
+    <item name="msf_interpolator" type="interpolator">@android:interpolator/decelerate_cubic</item>
+</resources>

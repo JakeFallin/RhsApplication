@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/oobut/Desktop/dev/orhanobut/dialogplus/dialogplus/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="dialogplus_black_overlay">#60000000</color>
+    <color name="dialogplus_card_shadow">#D4D4D4</color>
+    <!-- From: file:/Users/oobut/Desktop/dev/orhanobut/dialogplus/dialogplus/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dialogplus_default_center_margin">16dp</dimen>
+    <!-- From: file:/Users/oobut/Desktop/dev/orhanobut/dialogplus/dialogplus/src/main/res/values/integers.xml -->
+    <eat-comment/>
+    <integer name="dialogplus_animation_default_duration">300</integer>
+</resources>

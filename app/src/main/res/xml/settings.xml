@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    ​
+
+    <PreferenceCategory
+        android:title="Set Custom Schedule">
+    <Preference
+        android:key="custom"
+        android:title="Custom Schedule">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.jakefallin.rhsapp"
+            android:targetClass="com.jakefallin.rhsapp.StartupActivity2" />
+    </Preference>
+    ​</PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Prefs">
+        ​
+        <CheckBoxPreference
+            android:title="Receive Notifications"
+            android:summary="Want to receive Push Notifications ?"
+            android:key="receiveNotifications"
+            android:defaultValue="true" />
+        ​
+        <CheckBoxPreference
+            android:title="24 Hour Clock"
+            android:summary="Would you like to use a 24 hour clock?"
+            android:key="24h"
+            android:defaultValue="false" />
+        ​
+        ​
+    </PreferenceCategory>
+    ​
+    ​
+    ​
+</PreferenceScreen>

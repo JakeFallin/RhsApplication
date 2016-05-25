@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dim_overlay" />
+<!-- From: file:/C:/Users/Gordon/Documents/git%20workspace/material-sheet-fab-git/material-sheet-fab/src/main/res/layout/dim_overlay.xml -->

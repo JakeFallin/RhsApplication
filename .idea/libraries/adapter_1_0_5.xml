@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="adapter-1.0.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.thepacific/adapter/1.0.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.thepacific/adapter/1.0.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.thepacific/adapter/1.0.5/ac326f3373160bc2baf80015a03e322d7c4b4352/adapter-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

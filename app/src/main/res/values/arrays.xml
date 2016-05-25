@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="additional_exercises">
+        <item>Dips</item>
+        <item>Chins</item>
+        <item>Push Up</item>
+        <item>Dumbbell Rows</item>
+        <item>Bench Press</item>
+        <item>Military Press</item>
+        <item>Squat</item>
+        <item>Deadlift</item>
+        <item>Barbell Rows</item>
+        <item>Shrugs</item>
+        <item>Dumbbell Bench Press</item>
+        <item>Dumbbell Military Press</item>
+        <item>Dumbbell Incline Bench Press</item>
+        <item>Barbell Incline Bench Press</item>
+        <item>Lunges</item>
+        <item>Step-ups</item>
+        <item>Leg Press</item>
+        <item>Good Morning</item>
+        <item>Glute Ham Raise</item>
+        <item>Sit-ups</item>
+        <item>Dumbbell Side Bends</item>
+        <item>Hanging Leg Raises</item>
+        <item>Abdominal Wheel</item>
+        <item>Leg Curl</item>
+        <item>T-bar Rows</item>
+        <item>Cable Pulldown</item>
+        <item>Cable Rear Pulldown</item>
+        <item>Cable Close Grip Pulldown</item>
+        <item>Cable Seated Row</item>
+        <item>Face Pulls</item>
+        <item>High Row</item>
+        <item>Triceps Push down</item>
+        <item>Triceps Extension</item>
+        <item>Hack Squat</item>
+        <item>Dumbbell Curl</item>
+        <item>Barbell Curl</item>
+        <item>Cable Crunches</item>
+        <item>Leg Extension</item>
+        <item>Dumbbell Lateral Raise</item>
+        <item>Dumbbell Rear Delt Raise</item>
+        <item>Front Squat</item>
+        <item>Hyper extensions</item>
+        <item>Straight-leg Deadlift</item>
+        <item>Dragon flag</item>
+        <item>Crunches</item>
+        <item>Flyes</item>
+        <item>Pullover</item>
+    </string-array>
+
+    <string-array name="countries">
+
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua &amp; Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burma</item>
+        <item>Burundi</item>
+
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo, Democratic Republic of the</item>
+        <item>Congo, Republic of the</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'voire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+
+        <item>Gabon</item>
+        <item>Gambia, The</item>
+        <item>Georgia</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+
+        <item>Haiti</item>
+        <item>Holy See</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Korea, North</item>
+        <item>Korea, South</item>
+        <item>Kosovo</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+
+        <item>Macau</item>
+        <item>Macedonia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>Norway</item>
+
+        <item>Oman</item>
+
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestinian Territories</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+
+        <item>Qatar</item>
+
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand </item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+
+        <item>Yemen</item>
+
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string-array name="teacherNames" >
+
+        <item>Select Teacher</item>
+
+        <item>Abrunzo, Georiga </item>
+        <item>Acosta, Silvia </item>
+        <item>Aday, Douglas </item>
+        <item>Albergate, Anthony </item>
+        <item>Alexander, Leroy </item>
+        <item>Alexander, Marie </item>
+        <item>Allevi, Ann </item>
+        <item>Altieri, John </item>
+        <item>Ames, Linda </item>
+        <item>Amacker, Cheryl </item>
+        <item>Amundsen, Christine </item>
+        <item>Anderson, Christine </item>
+        <item>Anderson, Debra </item>
+        <item>Anderson, Emily </item>
+        <item>Andrews, Julia </item>
+        <item>Antonellis, Donna </item>
+        <item>Appel, Charles </item>
+        <item>Arana, Ada </item>
+        <item>Ardito, Jessica </item>
+        <item>Aromando, Karen </item>
+        <item>Askin, Heidi </item>
+        <item>Austin, Sawyer </item>
+        <item>Azzopardi, Diedre </item>
+
+        <item>Bailey, David</item>
+        <item>Baker, Allison</item>
+        <item>Bankos, Brenda</item>
+        <item>Barker, Barbara</item>
+        <item>Barnard, Beth</item>
+        <item>Barnett, Shula</item>
+        <item>Bergoffen, Abigail</item>
+        <item>Berk, Ashley</item>
+        <item>Berliner, Wayne</item>
+        <item>Bernardo, Christina</item>
+        <item>Bernardo, Patrick</item>
+        <item>Berry, Julie</item>
+        <item>Best, Cheryl</item>
+        <item>Betrus, Robert</item>
+        <item>Bianco, Andrew</item>
+        <item>Black, Stephanie</item>
+        <item>Blatt, Nicole</item>
+        <item>Blinn, Susan</item>
+        <item>Blumenfeld, Lisa</item>
+        <item>Blois, Kevin</item>
+        <item>Bodart, Kristen</item>
+        <item>Bonazzi, Paul</item>
+        <item>Bonfanti, Jill</item>
+        <item>Borchers, Shelia</item>
+        <item>Bostler, Monica</item>
+        <item>Bourque, Steven</item>
+        <item>Briggs, Amy</item>
+        <item>Brogan, Shelia</item>
+        <item>Brown, Ann</item>
+        <item>Brown, Brian</item>
+        <item>Brown, Jacob</item>
+        <item>Brunner, Dina</item>
+        <item>Brunner, Adam</item>
+        <item>Buckler-Dastis, Darien</item>
+        <item>Bunzey, Craig</item>
+        <item>Burde, Kacey</item>
+        <item>Burkard, Peter</item>
+        <item>Burnett, Alice</item>
+        <item>Buscher, Paul</item>
+        <item>Buzzard, Mia</item>
+
+        <item>Cahill, William</item>
+        <item>Calaman, Kerry</item>
+        <item>Caldwell, Kristen</item>
+        <item>Caliendo, Therese</item>
+        <item>Campbell. Beth</item>
+        <item>Campbell, Caroline</item>
+        <item>Cannon, Maria</item>
+        <item>Carbone, Bill</item>
+        <item>Carroll, Elaine</item>
+        <item>Caruso, Debra</item>
+        <item>Caruso, Juliette</item>
+        <item>Casatelli, Stacy</item>
+        <item>Casey, Kim</item>
+        <item>Catalano, Nanci</item>
+        <item>Catanzaro, Becky</item>
+        <item>Cerbasi, Joyce</item>
+        <item>Chambre, Susan</item>
+        <item>Chanod, Margaret</item>
+        <item>Chicas, Christina</item>
+        <item>Cheplic, Christina</item>
+        <item>Christopher, Susan</item>
+        <item>Cigolini, Erica</item>
+        <item>Cigolini, Lucille</item>
+        <item>Clark, Kelly</item>
+        <item>Clarke, Noreen</item>
+        <item>Clarke-Anderson, Kathleen</item>
+        <item>Coates, Karen</item>
+        <item>Comissiong, Olga</item>
+        <item>Conforth, Kellie</item>
+        <item>Connelly, Mathhew</item>
+        <item>Connor, Danielle</item>
+        <item>Contreras, Colleen</item>
+        <item>Cook, Keith</item>
+        <item>Coppola, Michele</item>
+        <item>Corcoran, Erin</item>
+        <item>Corlett, Susan</item>
+        <item>Correll, Moira</item>
+        <item>Cosgrove, Carolyn</item>
+        <item>Cotty, Tara</item>
+        <item>Cronk, Paul</item>
+        <item>Cruz, Beth</item>
+        <item>Cuellar, Angelica</item>
+        <item>Cunningham, Maeve</item>
+        <item>Curcio, Jason</item>
+        <item>Currier, Robert</item>
+
+    </string-array>
+
+    <string-array name="periods">
+
+        <item>Period 1</item>
+        <item>Period 2</item>
+        <item>Period 3</item>
+        <item>Period 4</item>
+        <item>Period 5</item>
+        <item>Period 6</item>
+        <item>Period 7</item>
+        <item>Period 8</item>
+
+    </string-array>
+
+    <string-array name="periodValues">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+
+    </string-array>
+
+
+</resources>

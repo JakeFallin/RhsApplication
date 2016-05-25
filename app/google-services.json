@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_id": "rhsapp-7691f",
+    "project_number": "138203154604",
+    "name": "rhsapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138203154604:android:30ae5b81b51c0f81",
+        "client_id": "android:com.jakefallin.rhsapp",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.jakefallin.rhsapp",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138203154604-ri9p58mccl7o43r5uveuv0h3egm0sdid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jakefallin.rhsapp",
+            "certificate_hash": "0F6392E9831821A3B4B97B3F1D409F454ACA71B5"
+          }
+        },
+        {
+          "client_id": "138203154604-5cb02otb2v0u1rteifheh96qoitridg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-76634705-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
