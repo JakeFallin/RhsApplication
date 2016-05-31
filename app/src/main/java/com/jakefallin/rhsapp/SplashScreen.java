@@ -22,14 +22,15 @@ public class SplashScreen extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPrefs.edit();
         boolean firstTime = sharedPrefs.getBoolean("first", true);
 
-        if (x) {
+        if (firstTime) {
 
-            Intent intent = new Intent(SplashScreen.this, SignInActivity.class);
+            Intent intent = new Intent(SplashScreen.this, StartupActivity2.class);
             startActivity(intent);
             editor.putBoolean("first", false);
             editor.apply();
             finish();
         } else {
+
             Intent intent = new Intent(SplashScreen.this, MainActivity.class);
             startActivity(intent);
             finish();

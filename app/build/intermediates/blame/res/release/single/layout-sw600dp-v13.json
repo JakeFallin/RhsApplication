@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\layout-sw600dp-v13\\mdtp_date_picker_dialog.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\layout-sw600dp\\mdtp_date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    }
+]

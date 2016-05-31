@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="23"
-    density="420dpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxxhdpi"
     format="7"
-    timestamp="1153103258903356"
-    verifier="COMPATIBLE" >
+    timestamp="183687538022783"
+    verifier="METHOD_DELETED" >
 
     <task
         name="javac"
-        duration="2355" />
+        duration="2944" />
     <task
         name="instant-run-dex"
-        duration="62" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="183" />
+        duration="158" />
     <task
         name="verifier"
-        duration="40" />
+        duration="19" />
 
     <artifact
-        location="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
+    <artifact
+        location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+        type="DEX" />
 
-    <build timestamp="1152035029269747" >
+    <build timestamp="183493024102416" >
         <artifact
-            location="C:\Users\Molly\Documents\rhsapp4\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\Jake\Desktop\rhsapp2\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1153103258903356"
-        verifier="COMPATIBLE" >
+        timestamp="183687538022783"
+        verifier="METHOD_DELETED" >
         <artifact
-            location="C:\Users\Molly\Documents\rhsapp4\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

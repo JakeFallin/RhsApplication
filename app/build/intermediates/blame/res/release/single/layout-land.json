@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\layout-land\\mdtp_time_picker_dialog.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\layout-land\\mdtp_time_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\layout-land\\mdtp_date_picker_dialog.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\layout-land\\mdtp_date_picker_dialog.xml"
+    }
+]

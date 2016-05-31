@@ -1,0 +1,4 @@
+CHANGED,C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\jakefallin\rhsapp\Fragments\AbsencesFragment$6$override.class
+CHANGED,C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\jakefallin\rhsapp\Fragments\AbsencesFragment$override.class
+CHANGED,C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\jakefallin\rhsapp\SplashScreen$override.class
+CHANGED,C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

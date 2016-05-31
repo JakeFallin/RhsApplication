@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\raw\\teachers",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\src\\main\\res\\raw\\teachers"
+    }
+]

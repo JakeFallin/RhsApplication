@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        style="@style/wrap_wrap"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ann_when"
+            style="@style/style_setting_text"
+            android:text="when"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_black_87"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/ann_where"
+            style="@style/style_setting_text"
+            android:text="where"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_black_87"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/ann_more"
+            style="@style/style_setting_text"
+            android:text="more"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_black_87"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:scrollHorizontally="true"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/ann_date"
+            style="@style/style_setting_text"
+            android:text="date"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_black_87"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

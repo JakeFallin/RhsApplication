@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\xml\\global_tracker.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\generated\\res\\google-services\\release\\xml\\global_tracker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\build\\intermediates\\res\\merged\\release\\xml\\settings.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\rhsapp2\\app\\src\\main\\res\\xml\\settings.xml"
+    }
+]
