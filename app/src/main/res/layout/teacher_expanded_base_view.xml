@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        style="@style/wrap_wrap"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/letter"
+            android:text="A"
+            android:drawablePadding="10dp"
+            style="@style/style_setting_item_title" />
+
+    </LinearLayout>
+</LinearLayout>
