@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.jakefallin.rhsapp.Fragments.AnnouncementsFragment">
+
     <ExpandableListView
         android:id="@+id/abs_list"
         android:dividerHeight="1dp"
