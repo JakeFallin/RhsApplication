@@ -1,14 +1,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.jakefallin.rhsapp.Fragments.AnnouncementsFragment">
-<ExpandableListView
-    android:id="@+id/abs_list"
-    android:dividerHeight="1dp"
-    android:divider="@android:color/darker_gray"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.jakefallin.rhsapp.Fragments.AnnouncementsFragment">
 
-</ExpandableListView>
+    <ExpandableListView
+        android:id="@+id/abs_list"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false">
+        ​
+    </ExpandableListView>
 </FrameLayout>

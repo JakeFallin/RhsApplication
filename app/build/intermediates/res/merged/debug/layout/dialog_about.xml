@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/leeeeee"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:windowMinWidthMajor="@android:dimen/dialog_min_width_major">
+
+        <ImageView
+            android:id="@+id/aboutImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/jake" />
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/aboutImage"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/aboutImage"
+            android:layout_toRightOf="@+id/aboutImage"
+            android:text="Jake Fallin"
+            android:textColor="@color/text_black_87"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/about_separator_height"
+            android:layout_below="@id/aboutImage"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/about_item_text_color"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/aboutJobText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/aboutTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:text="Role:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aboutJob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/aboutJobText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Android Developer"
+            android:textColor="@color/text_black_87"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/about_separator_height"
+            android:layout_below="@id/aboutJob"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/about_item_text_color"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/aboutYearText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/aboutJob"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Year Worked On:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/aboutYear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/aboutYearText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="2016"
+            android:textColor="@color/text_black_87"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/aboutYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Ok"
+            android:textAlignment="gravity" />
+
+    </RelativeLayout>
+
+</ScrollView>

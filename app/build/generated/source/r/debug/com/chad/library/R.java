@@ -25,58 +25,58 @@ public final class R {
 		public static final int stackFromEnd = 0x7f01013f;
 	}
 	public static final class color {
-		public static final int cardview_dark_background = 0x7f0f001c;
-		public static final int cardview_light_background = 0x7f0f001d;
-		public static final int cardview_shadow_end_color = 0x7f0f001e;
-		public static final int cardview_shadow_start_color = 0x7f0f001f;
+		public static final int cardview_dark_background = 0x7f0f0027;
+		public static final int cardview_light_background = 0x7f0f0028;
+		public static final int cardview_shadow_end_color = 0x7f0f0029;
+		public static final int cardview_shadow_start_color = 0x7f0f002a;
 	}
 	public static final class dimen {
 		public static final int activity_horizontal_margin = 0x7f0a003d;
-		public static final int activity_vertical_margin = 0x7f0a0070;
-		public static final int avatarSize = 0x7f0a0075;
-		public static final int cardview_compat_inset_shadow = 0x7f0a007c;
-		public static final int cardview_default_elevation = 0x7f0a007d;
-		public static final int cardview_default_radius = 0x7f0a007e;
-		public static final int def_height = 0x7f0a007f;
-		public static final int dp_066 = 0x7f0a0098;
-		public static final int dp_10 = 0x7f0a0099;
-		public static final int dp_14 = 0x7f0a009a;
-		public static final int dp_22 = 0x7f0a009b;
-		public static final int dp_36 = 0x7f0a009c;
-		public static final int dp_4 = 0x7f0a009d;
-		public static final int dp_40 = 0x7f0a009e;
-		public static final int dp_60 = 0x7f0a009f;
-		public static final int dp_72 = 0x7f0a00a0;
-		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0a00b6;
-		public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0a00b7;
-		public static final int item_touch_helper_swipe_escape_velocity = 0x7f0a00b8;
-		public static final int smallSpace = 0x7f0a00de;
-		public static final int sp_12 = 0x7f0a00e2;
-		public static final int sp_14 = 0x7f0a00e3;
-		public static final int sp_16 = 0x7f0a00e4;
+		public static final int activity_vertical_margin = 0x7f0a007b;
+		public static final int avatarSize = 0x7f0a0080;
+		public static final int cardview_compat_inset_shadow = 0x7f0a0087;
+		public static final int cardview_default_elevation = 0x7f0a0088;
+		public static final int cardview_default_radius = 0x7f0a0089;
+		public static final int def_height = 0x7f0a008a;
+		public static final int dp_066 = 0x7f0a00a3;
+		public static final int dp_10 = 0x7f0a00a4;
+		public static final int dp_14 = 0x7f0a00a5;
+		public static final int dp_22 = 0x7f0a00a6;
+		public static final int dp_36 = 0x7f0a00a7;
+		public static final int dp_4 = 0x7f0a00a8;
+		public static final int dp_40 = 0x7f0a00a9;
+		public static final int dp_60 = 0x7f0a00aa;
+		public static final int dp_72 = 0x7f0a00ab;
+		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0a00c1;
+		public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0a00c2;
+		public static final int item_touch_helper_swipe_escape_velocity = 0x7f0a00c3;
+		public static final int smallSpace = 0x7f0a00e9;
+		public static final int sp_12 = 0x7f0a00ed;
+		public static final int sp_14 = 0x7f0a00ee;
+		public static final int sp_16 = 0x7f0a00ef;
 	}
 	public static final class drawable {
-		public static final int sample_footer_loading = 0x7f0200c0;
-		public static final int sample_footer_loading_progress = 0x7f0200c1;
+		public static final int sample_footer_loading = 0x7f0200ca;
+		public static final int sample_footer_loading_progress = 0x7f0200cb;
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f100009;
-		public static final int loading_progress = 0x7f1000da;
-		public static final int loading_text = 0x7f1000db;
-		public static final int loading_view = 0x7f1000d9;
+		public static final int loading_progress = 0x7f1000dc;
+		public static final int loading_text = 0x7f1000dd;
+		public static final int loading_view = 0x7f1000db;
 	}
 	public static final class layout {
-		public static final int def_loading = 0x7f040026;
+		public static final int def_loading = 0x7f040028;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f08005a;
+		public static final int app_name = 0x7f08005b;
 		public static final int loading = 0x7f08004b;
 	}
 	public static final class style {
-		public static final int Base_CardView = 0x7f0b009a;
+		public static final int Base_CardView = 0x7f0b009b;
 		public static final int CardView = 0x7f0b008f;
-		public static final int CardView_Dark = 0x7f0b00c4;
-		public static final int CardView_Light = 0x7f0b00c5;
+		public static final int CardView_Dark = 0x7f0b00c5;
+		public static final int CardView_Light = 0x7f0b00c6;
 	}
 	public static final class styleable {
 		public static final int[] CardView = { 0x0101013f, 0x01010140, 0x7f0100a7, 0x7f0100a8, 0x7f0100a9, 0x7f0100aa, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad, 0x7f0100ae, 0x7f0100af, 0x7f0100b0, 0x7f0100b1 };

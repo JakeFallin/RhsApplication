@@ -56,5 +56,16 @@
     <dimen name="note_textsize">14sp</dimen>
     <dimen name="note_title_textsize">24sp</dimen>
     <dimen name="g_top_margin">100dp</dimen>
+    <dimen name="about_icon_size">34dp</dimen>
+    <dimen name="about_staff_size">60dp</dimen>
+    <dimen name="about_icon_padding">8dp</dimen>
+    <dimen name="about_staff_padding">2dp</dimen>
+    <dimen name="about_text_padding">8dp</dimen>
+    <dimen name="about_group_text_padding">16dp</dimen>
+    <dimen name="about_separator_height">0.5dp</dimen>
+    <dimen name="about_description_text_size">16sp</dimen>
+    <dimen name="about_item_text_size">16sp</dimen>
+    <dimen name="about_job_text_size">16sp</dimen>
+    <dimen name="about_group_item_text_size">18sp</dimen>
 
 </resources>

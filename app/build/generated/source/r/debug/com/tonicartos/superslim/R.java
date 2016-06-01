@@ -30,7 +30,7 @@ public final class R {
 		public static final int sticky = 0x7f10006c;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f08005a;
+		public static final int app_name = 0x7f08005b;
 	}
 	public static final class styleable {
 		public static final int[] superslim_GridSLM = { 0x7f0101b9, 0x7f0101ba };

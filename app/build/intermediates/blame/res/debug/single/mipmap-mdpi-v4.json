@@ -14,5 +14,9 @@
     {
         "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\googleg_color.png",
         "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-mdpi\\googleg_color.png"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\jakeicon.png",
+        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-mdpi\\jakeicon.png"
     }
 ]
