@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StaggeredTextGridView_attrs"><attr format="dimension" name="horizontalSpace"/><attr format="dimension" name="verticalSpace"/><attr format="boolean" name="isFitToScreen"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="action_default">Settings</string>
+    <string name="app_name">StaggeredTextGridView</string>
+    <string name="hello_world">Hello world!</string>
+</resources>

@@ -4,43 +4,41 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="183687538022783"
-    verifier="METHOD_DELETED" >
+    timestamp="1039214144603234" >
 
     <task
         name="javac"
-        duration="2944" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="158" />
+        duration="0" />
     <task
         name="verifier"
-        duration="19" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-        type="DEX" />
+        location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="183493024102416" >
+    <build timestamp="1039109449176026" >
         <artifact
-            location="C:\Users\Jake\Desktop\rhsapp2\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\Jake\Documents\rhsapp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="183687538022783"
-        verifier="METHOD_DELETED" >
+        timestamp="1039156526282311"
+        verifier="CLASS_ADDED" >
         <artifact
-            location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
             type="DEX" />
+    </build>
+    <build timestamp="1039214144603234" >
         <artifact
-            location="C:\Users\Jake\Desktop\rhsapp2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-            type="DEX" />
+            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

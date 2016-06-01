@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         //load TeacherSearch activity
                         if (id == R.id.teachers) {
-                            Intent intent = new Intent(MainActivity.this, TeacherSearchActivity.class);
+                            Intent intent = new Intent(MainActivity.this, TeachersActivity.class);
                             startActivity(intent);
                         }
                         //load chat activity

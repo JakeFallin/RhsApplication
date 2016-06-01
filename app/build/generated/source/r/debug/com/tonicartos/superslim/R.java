@@ -8,14 +8,14 @@ package com.tonicartos.superslim;
 
 public final class R {
 	public static final class attr {
-		public static final int slm_grid_columnWidth = 0x7f0101b6;
-		public static final int slm_grid_numColumns = 0x7f0101b7;
-		public static final int slm_headerDisplay = 0x7f0101b9;
-		public static final int slm_isHeader = 0x7f0101b8;
-		public static final int slm_section_firstPosition = 0x7f0101ba;
-		public static final int slm_section_headerMarginEnd = 0x7f0101bd;
-		public static final int slm_section_headerMarginStart = 0x7f0101bc;
-		public static final int slm_section_sectionManager = 0x7f0101bb;
+		public static final int slm_grid_columnWidth = 0x7f0101b9;
+		public static final int slm_grid_numColumns = 0x7f0101ba;
+		public static final int slm_headerDisplay = 0x7f0101bc;
+		public static final int slm_isHeader = 0x7f0101bb;
+		public static final int slm_section_firstPosition = 0x7f0101bd;
+		public static final int slm_section_headerMarginEnd = 0x7f0101c0;
+		public static final int slm_section_headerMarginStart = 0x7f0101bf;
+		public static final int slm_section_sectionManager = 0x7f0101be;
 	}
 	public static final class id {
 		public static final int auto_fit = 0x7f100069;
@@ -30,13 +30,13 @@ public final class R {
 		public static final int sticky = 0x7f10006c;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f080058;
+		public static final int app_name = 0x7f08005a;
 	}
 	public static final class styleable {
-		public static final int[] superslim_GridSLM = { 0x7f0101b6, 0x7f0101b7 };
+		public static final int[] superslim_GridSLM = { 0x7f0101b9, 0x7f0101ba };
 		public static final int superslim_GridSLM_slm_grid_columnWidth = 0;
 		public static final int superslim_GridSLM_slm_grid_numColumns = 1;
-		public static final int[] superslim_LayoutManager = { 0x7f0101b8, 0x7f0101b9, 0x7f0101ba, 0x7f0101bb, 0x7f0101bc, 0x7f0101bd };
+		public static final int[] superslim_LayoutManager = { 0x7f0101bb, 0x7f0101bc, 0x7f0101bd, 0x7f0101be, 0x7f0101bf, 0x7f0101c0 };
 		public static final int superslim_LayoutManager_slm_headerDisplay = 1;
 		public static final int superslim_LayoutManager_slm_isHeader = 0;
 		public static final int superslim_LayoutManager_slm_section_firstPosition = 2;

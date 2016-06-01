@@ -52,7 +52,7 @@
             android:theme="@style/CustomActionBarTheme">
         </activity>
 
-        <activity android:name=".TeacherSearchActivity"
+        <activity android:name=".TeachersActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize" />
 

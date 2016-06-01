@@ -8,12 +8,12 @@ package se.emilsjolander.stickylistheaders;
 
 public final class R {
 	public static final class attr {
-		public static final int hasStickyHeaders = 0x7f010154;
-		public static final int isDrawingListUnderStickyHeader = 0x7f010155;
-		public static final int stickyListHeadersListViewStyle = 0x7f010153;
+		public static final int hasStickyHeaders = 0x7f010157;
+		public static final int isDrawingListUnderStickyHeader = 0x7f010158;
+		public static final int stickyListHeadersListViewStyle = 0x7f010156;
 	}
 	public static final class styleable {
-		public static final int[] StickyListHeadersListView = { 0x0101007f, 0x010100d5, 0x010100d6, 0x010100d7, 0x010100d8, 0x010100d9, 0x010100de, 0x010100e0, 0x010100eb, 0x010100fb, 0x010100fc, 0x010100fd, 0x010100fe, 0x01010100, 0x01010101, 0x01010129, 0x0101012a, 0x0101012b, 0x01010226, 0x010102c1, 0x01010335, 0x010103a5, 0x7f010153, 0x7f010154, 0x7f010155 };
+		public static final int[] StickyListHeadersListView = { 0x0101007f, 0x010100d5, 0x010100d6, 0x010100d7, 0x010100d8, 0x010100d9, 0x010100de, 0x010100e0, 0x010100eb, 0x010100fb, 0x010100fc, 0x010100fd, 0x010100fe, 0x01010100, 0x01010101, 0x01010129, 0x0101012a, 0x0101012b, 0x01010226, 0x010102c1, 0x01010335, 0x010103a5, 0x7f010156, 0x7f010157, 0x7f010158 };
 		public static final int StickyListHeadersListView_android_cacheColorHint = 14;
 		public static final int StickyListHeadersListView_android_choiceMode = 17;
 		public static final int StickyListHeadersListView_android_clipToPadding = 8;

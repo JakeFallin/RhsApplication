@@ -14,6 +14,6 @@ public final class R {
 		public static final int msf_interpolator = 0x7f0d0000;
 	}
 	public static final class layout {
-		public static final int dim_overlay = 0x7f040035;
+		public static final int dim_overlay = 0x7f040037;
 	}
 }

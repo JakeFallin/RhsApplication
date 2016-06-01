@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/jitpack/build/library/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string name="loading">Loading...</string>
+</resources>

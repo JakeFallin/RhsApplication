@@ -15,33 +15,33 @@ public final class R {
 		public static final int pugnotification_color_white = 0x7f0f0092;
 	}
 	public static final class dimen {
-		public static final int pugnotification_dimension_default = 0x7f0a00cb;
-		public static final int pugnotification_text_size_subtitle = 0x7f0a00cc;
-		public static final int pugnotification_text_size_title = 0x7f0a00cd;
+		public static final int pugnotification_dimension_default = 0x7f0a00d6;
+		public static final int pugnotification_text_size_subtitle = 0x7f0a00d7;
+		public static final int pugnotification_text_size_title = 0x7f0a00d8;
 	}
 	public static final class drawable {
 		public static final int pugnotification_ic_launcher = 0x7f0200be;
 		public static final int pugnotification_ic_placeholder = 0x7f0200bf;
 	}
 	public static final class id {
-		public static final int notification_content_information = 0x7f100147;
-		public static final int notification_content_main = 0x7f100145;
-		public static final int notification_img_background = 0x7f100146;
-		public static final int notification_img_icon = 0x7f100149;
-		public static final int notification_text_message = 0x7f10014a;
-		public static final int notification_text_title = 0x7f100148;
+		public static final int notification_content_information = 0x7f10014a;
+		public static final int notification_content_main = 0x7f100148;
+		public static final int notification_img_background = 0x7f100149;
+		public static final int notification_img_icon = 0x7f10014c;
+		public static final int notification_text_message = 0x7f10014d;
+		public static final int notification_text_title = 0x7f10014b;
 	}
 	public static final class layout {
-		public static final int pugnotification_custom = 0x7f040056;
+		public static final int pugnotification_custom = 0x7f040058;
 	}
 	public static final class string {
-		public static final int pugnotification_key_voice_reply = 0x7f08008c;
-		public static final int pugnotification_label_voice_reply = 0x7f08008d;
-		public static final int pugnotification_text_description_image_background = 0x7f08008e;
-		public static final int pugnotification_text_description_image_icon = 0x7f08008f;
-		public static final int pugnotification_text_message = 0x7f080090;
-		public static final int pugnotification_text_notification = 0x7f080091;
-		public static final int pugnotification_text_notification_custom = 0x7f080092;
-		public static final int pugnotification_text_title = 0x7f080093;
+		public static final int pugnotification_key_voice_reply = 0x7f08008e;
+		public static final int pugnotification_label_voice_reply = 0x7f08008f;
+		public static final int pugnotification_text_description_image_background = 0x7f080090;
+		public static final int pugnotification_text_description_image_icon = 0x7f080091;
+		public static final int pugnotification_text_message = 0x7f080092;
+		public static final int pugnotification_text_notification = 0x7f080093;
+		public static final int pugnotification_text_notification_custom = 0x7f080094;
+		public static final int pugnotification_text_title = 0x7f080095;
 	}
 }

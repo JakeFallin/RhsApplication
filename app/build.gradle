@@ -61,5 +61,9 @@ dependencies {
     compile 'com.rohit.recycleritemclicksupport:recycleritemclicksupport:1.0.1'
     compile 'com.orhanobut:dialogplus:1.11@aar'
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.7.4'
+    compile 'com.riontech.staggeredtextgridview:staggeredtextgridview:1.0.1'
+
 
 }

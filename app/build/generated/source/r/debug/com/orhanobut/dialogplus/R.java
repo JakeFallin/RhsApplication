@@ -20,23 +20,23 @@ public final class R {
 		public static final int dialogplus_card_shadow = 0x7f0f003d;
 	}
 	public static final class dimen {
-		public static final int dialogplus_default_center_margin = 0x7f0a0093;
+		public static final int dialogplus_default_center_margin = 0x7f0a0095;
 	}
 	public static final class id {
 		public static final int dialogplus_content_container = 0x7f1000d8;
-		public static final int dialogplus_footer_container = 0x7f1000f3;
-		public static final int dialogplus_header_container = 0x7f1000f1;
-		public static final int dialogplus_list = 0x7f1000f2;
+		public static final int dialogplus_footer_container = 0x7f1000f6;
+		public static final int dialogplus_header_container = 0x7f1000f4;
+		public static final int dialogplus_list = 0x7f1000f5;
 		public static final int dialogplus_outmost_container = 0x7f1000d7;
-		public static final int dialogplus_view_container = 0x7f1000f4;
+		public static final int dialogplus_view_container = 0x7f1000f7;
 	}
 	public static final class integer {
 		public static final int dialogplus_animation_default_duration = 0x7f0c0006;
 	}
 	public static final class layout {
-		public static final int base_container = 0x7f040024;
-		public static final int dialog_grid = 0x7f040032;
-		public static final int dialog_list = 0x7f040033;
-		public static final int dialog_view = 0x7f040034;
+		public static final int base_container = 0x7f040025;
+		public static final int dialog_grid = 0x7f040034;
+		public static final int dialog_list = 0x7f040035;
+		public static final int dialog_view = 0x7f040036;
 	}
 }
