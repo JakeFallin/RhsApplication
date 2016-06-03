@@ -94,6 +94,10 @@ public class AbsencesFragment extends Fragment {
             }
         };
         list0 = new ArrayList<>();
+
+        SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
+        urlJsonObj = s.getString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
+
         makeJsonObjectRequest();
     }
     public void clickSnack(int g, int c) {

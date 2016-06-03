@@ -18,7 +18,8 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        boolean x = true;SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(AppController.getAppContext());
+        boolean x = true;
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(AppController.getAppContext());
         SharedPreferences.Editor editor = sharedPrefs.edit();
         boolean firstTime = sharedPrefs.getBoolean("first", true);
 

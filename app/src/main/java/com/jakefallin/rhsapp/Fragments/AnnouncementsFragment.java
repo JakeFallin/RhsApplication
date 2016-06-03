@@ -1,5 +1,7 @@
 package com.jakefallin.rhsapp.Fragments;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -101,9 +103,11 @@ public class AnnouncementsFragment extends Fragment {
             }
         };
 
-
-
         list0 = new ArrayList<>();
+
+        SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
+        urlJsonObj = s.getString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
+
         makeJsonObjectRequest();
     }
     public void clickSnack(int g, int c) {

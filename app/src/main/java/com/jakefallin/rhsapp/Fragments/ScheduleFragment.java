@@ -81,8 +81,10 @@ public class ScheduleFragment extends Fragment {
         scheduleListToday = new ArrayList<Schedule>();
         customTeachers = new ArrayList<String>();
 
-
         mAdapterToday = new ScheduleAdapter(scheduleListToday);
+
+        SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
+        urlJsonObj = s.getString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
 
         makeJsonObjectRequest();
         final CoordinatorLayout c = (CoordinatorLayout)getActivity().findViewById(R.id.main_content);

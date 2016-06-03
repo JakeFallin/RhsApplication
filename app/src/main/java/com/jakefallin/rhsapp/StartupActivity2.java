@@ -339,6 +339,10 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = s.edit();
 
+            editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
+            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
+            editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
+
             Gson gson = new Gson();
             String json = gson.toJson(startups);
             editor.putString("startupInfo", json);
