@@ -16,14 +16,12 @@
 
     <PreferenceCategory
         android:title="Prefs">
-        
         ​
         <CheckBoxPreference
             android:title="24 Hour Clock"
             android:summary="Would you like to use a 24 hour clock?"
             android:key="24h"
             android:defaultValue="false" />
-        ​
         ​
     </PreferenceCategory>
 
@@ -38,7 +36,5 @@
                 android:targetClass="com.jakefallin.rhsapp.AboutActivity" />
         </Preference>
         ​</PreferenceCategory>
-    ​
-    ​
     ​
 </PreferenceScreen>

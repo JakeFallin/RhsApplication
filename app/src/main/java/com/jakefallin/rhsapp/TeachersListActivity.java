@@ -7,6 +7,7 @@ package com.jakefallin.rhsapp;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
@@ -23,6 +26,8 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.jakefallin.rhsapp.Adapters.TeacherListAdapter;
 import com.jakefallin.rhsapp.Objects.Teacher;
 import com.jakefallin.rhsapp.Util.AppController;
+import com.rohit.recycleritemclicksupport.RecyclerItemClickSupport;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -68,6 +73,22 @@ public class TeachersListActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        RecyclerItemClickSupport.addTo(recyclerView).setOnItemClickListener(new RecyclerItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+
+                String s = teacherList.get(position).getEmail();
+
+                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+                sendIntent.setType("plain/text");
+                sendIntent.setData(Uri.parse(s));
+                sendIntent.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                sendIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { s });
+                startActivity(sendIntent);
+
+            }
+        });
     }
 
     private void makeJsonObjectRequest() {

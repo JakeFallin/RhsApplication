@@ -51,6 +51,7 @@ public class ScheduleFragment extends Fragment {
 
     private ScheduleAdapter mAdapterToday;
     private String s;
+    private String date;
     private String urlJsonObj = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php";
     private static String TAG = MainActivity.class.getSimpleName();
 
@@ -134,8 +135,10 @@ public class ScheduleFragment extends Fragment {
                     // Parsing json object response
                     // response will be a json object
                     s = "" +  response.get("day");
+                    textView.setText("" + s);
 
-                    textView.setText(s);
+                    date = "" + response.get("date");
+
 
                     JSONArray scheduleToday = response.getJSONArray("schedule");
 
@@ -259,6 +262,7 @@ public class ScheduleFragment extends Fragment {
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = s.edit();
 
+        editor.putString("date", date);
         Gson gson = new Gson();
         String json = gson.toJson(scheduleListToday);
         editor.putString("scheduleInfo", json);

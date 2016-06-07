@@ -4,42 +4,40 @@
     api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="296580477054250"
+    timestamp="304142023070135"
     token="7442292033072025057" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="508" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="50" />
     <task
         name="verifier"
-        duration="0" />
+        duration="9" />
 
     <artifact
-        location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
 
-    <build timestamp="296221170983432" >
+    <build timestamp="304002946861287" >
         <artifact
             location="C:\Users\Jake\Documents\rhsapp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="296544551495191"
-        verifier="COMPATIBLE" >
+    <build timestamp="304089526624020" >
         <artifact
-            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\builds\debug\296544551495191\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
     </build>
-    <build timestamp="296580477054250" >
+    <build timestamp="304142023070135" >
         <artifact
-            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
+            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

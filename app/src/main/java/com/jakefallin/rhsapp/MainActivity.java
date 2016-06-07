@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FABToolbarLayout fabLayout;
     private View backFab, forwardFab, calFab, containerFab, dummy;
     private Calendar lastDayOfSchool, firstDayOfSchool, current;
+    private String date;
 
 
     @Override
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         PreferenceManager.setDefaultValues(this, R.xml.settings, false);
         boolean firstTime = s.getBoolean("first", true);
+        date = s.getString("date", "2016-06-06");
 
         lastDayOfSchool = Calendar.getInstance();
         lastDayOfSchool.set(2016, 5, 20);
@@ -192,7 +194,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onBackPressed() {
         fabLayout.hide();
 
-
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = s.edit();
 
@@ -201,7 +202,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
         editor.apply();
         finish();
-        startActivity(getIntent());
     }
 
     //default adapter that uses SupportFragmentManager, creates new instance of fragment with a tile name
