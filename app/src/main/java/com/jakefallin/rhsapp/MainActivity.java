@@ -172,7 +172,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
 
                         //highlight which item is selected
-                        menuItem.setChecked(true);
                         int id = menuItem.getItemId();
 
                         //load TeacherSearch activity
@@ -181,7 +180,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             startActivity(intent);
                         }
                         //load chat activity
-                        else if (id == R.id.chat) {
+                        else if (id == R.id.settings) {
+                            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                            startActivity(intent);
                         }
 
                         // Closing drawer on item click
@@ -282,8 +283,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //load Settings activity
         if (id == R.id.action_settings) {
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-            startActivity(intent);
+
+            SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = s.edit();
+
+            editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
+            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
+            editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
+            editor.apply();
+            finish();
+            startActivity(getIntent());
 
         } else if (id == android.R.id.home) {
             mDrawerLayout.openDrawer(GravityCompat.START);

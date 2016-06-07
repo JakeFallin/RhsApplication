@@ -8,6 +8,7 @@ import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
+    private NavigationView navigationView;
     private ActionBar actionBar;
     // temporary string to show the parsed response
 
@@ -29,36 +31,36 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        navigationView = (NavigationView) findViewById(R.id.nav_view2);
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        // Set behavior of Navigation drawer
-//            assert navigationView != null;
-//            navigationView.setNavigationItemSelectedListener(
-//                    new NavigationView.OnNavigationItemSelectedListener() {
-//                        @Override
-//                        public boolean onNavigationItemSelected(MenuItem menuItem) {
-//
-//                            //highlight which item is selected
-//                            menuItem.setChecked(true);
-//                            int id = menuItem.getItemId();
-//
-//                            //load TeacherSearch activity
-//                            if (id == R.id.teachers) {
-//                                Intent intent = new Intent(SettingsActivity.this, TeacherSearch.class);
-//                                startActivity(intent);
-//                            }
-//                            //load chat activity
-//                            else if (id == R.id.chat) {
-//                                ConversationActivity.show(SettingsActivity.this);
-//                            }
-//
-//                            // Closing drawer on item click
-//                            mDrawerLayout.closeDrawers();
-//                            return true;
-//                        }
-//                    });
-        // Adding Floating Action Button to bottom right of main view
+        assert navigationView != null;
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+
+                        //highlight which item is selected
+                        int id = menuItem.getItemId();
+
+                        //load TeacherSearch activity
+                        if (id == R.id.teachers) {
+                            Intent intent = new Intent(SettingsActivity.this, TeachersActivity.class);
+                            startActivity(intent);
+                        }
+                        //load chat activity
+                        else if (id == R.id.overview) {
+                            Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                            startActivity(intent);
+                        }
+
+                        // Closing drawer on item click
+                        mDrawerLayout.closeDrawers();
+                        return true;
+                    }
+                });
 
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingsFragment())

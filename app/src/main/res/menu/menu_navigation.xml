@@ -20,15 +20,18 @@
             android:tint="@color/button_grey"
             android:id="@+id/overview"
             android:title="Overview" />
-        <item
-            android:icon="@drawable/ic_bookmark_border_black_24dp"
-            android:tint="@color/button_grey"
-            android:id="@+id/chat"
-            android:title="Chat" />
+
         <item
             android:icon="@drawable/ic_favorite_black_24dp"
             android:tint="@color/button_grey"
             android:id="@+id/teachers"
             android:title="Teachers" />
+
+        <item
+            android:icon="@drawable/ic_bookmark_border_black_24dp"
+            android:tint="@color/button_grey"
+            android:id="@+id/settings"
+            android:title="Settings" />
+
     </group>
 </menu>

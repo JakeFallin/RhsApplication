@@ -99,13 +99,18 @@ public class TeachersActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // Set item in checked state
                         // Set item in checked state
-                        menuItem.setChecked(true);
                         int id = menuItem.getItemId();
 
-                        if (id == R.id.action_settings) {
+                        if (id == R.id.overview) {
                             Intent intent = new Intent(TeachersActivity.this, MainActivity.class);
                             startActivity(intent);
                         }
+                        //load chat activity
+                        else if (id == R.id.settings) {
+                            Intent intent = new Intent(TeachersActivity.this, SettingsActivity.class);
+                            startActivity(intent);
+                        }
+
 
                         // TODO: handle navigation
 

@@ -8,7 +8,19 @@
         "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\src\\main\\res\\mipmap-xxxhdpi\\googleg_color.png"
     },
     {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\exploded-aar\\com.riontech.staggeredtextgridview\\staggeredtextgridview\\1.0.1\\res\\mipmap-xxxhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\googleg_color.png",
+        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-xxxhdpi\\googleg_color.png"
+    },
+    {
         "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\jakeicon.png",
         "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\src\\main\\res\\mipmap-xxxhdpi\\jakeicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\jakeicon.png",
+        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-xxxhdpi\\jakeicon.png"
     }
 ]

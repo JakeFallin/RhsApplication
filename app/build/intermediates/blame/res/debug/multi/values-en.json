@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\values-en\\values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\exploded-aar\\com.github.CymChad\\BaseRecyclerViewAdapterHelper\\v1.7.4\\res\\values-en\\values-en.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 46,
+                        "endOffset": 203
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\values-en\\values-en.xml",
         "map": [
             {
