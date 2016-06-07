@@ -10,7 +10,9 @@ public class AbsenceBean {
     private String name;
     private List<AbsenceInfoBean> AbsenceInfoBeanList;
 
-    public AbsenceBean(String mname) {name = mname;}
+    public AbsenceBean(String mname) {
+        name = mname;
+    }
 
     public List<AbsenceInfoBean> getAbsenceInfoBeanList() {
         return AbsenceInfoBeanList;

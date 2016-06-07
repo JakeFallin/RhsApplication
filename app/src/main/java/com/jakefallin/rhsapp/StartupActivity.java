@@ -129,7 +129,7 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
         toolbar.setTitle("Set Classes");
 
 
-        if(firstTime) {
+        if (firstTime) {
             v1 = mRowContainer.findViewById(R.id.period1);
             fillRow(v1, "Period 1", "", true, true, true, false);
             v2 = mRowContainer.findViewById(R.id.period2);
@@ -150,21 +150,21 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
             getData();
 
             v1 = mRowContainer.findViewById(R.id.period1);
-            fillRow(v1, arrayListCTI.get(0).getMyClass() , arrayListCTI.get(0).getMyTeacher(), arrayListCTI.get(0).isDay1(), arrayListCTI.get(0).isDay2(), arrayListCTI.get(0).isDay3(), arrayListCTI.get(0).isDay4());
+            fillRow(v1, arrayListCTI.get(0).getMyClass(), arrayListCTI.get(0).getMyTeacher(), arrayListCTI.get(0).isDay1(), arrayListCTI.get(0).isDay2(), arrayListCTI.get(0).isDay3(), arrayListCTI.get(0).isDay4());
             v2 = mRowContainer.findViewById(R.id.period2);
-            fillRow(v2, arrayListCTI.get(1).getMyClass() , arrayListCTI.get(1).getMyTeacher(), arrayListCTI.get(1).isDay1(), arrayListCTI.get(1).isDay2(), arrayListCTI.get(1).isDay3(), arrayListCTI.get(1).isDay4());
+            fillRow(v2, arrayListCTI.get(1).getMyClass(), arrayListCTI.get(1).getMyTeacher(), arrayListCTI.get(1).isDay1(), arrayListCTI.get(1).isDay2(), arrayListCTI.get(1).isDay3(), arrayListCTI.get(1).isDay4());
             v3 = mRowContainer.findViewById(R.id.period3);
-            fillRow(v3, arrayListCTI.get(2).getMyClass() , arrayListCTI.get(2).getMyTeacher(), arrayListCTI.get(2).isDay1(), arrayListCTI.get(2).isDay2(), arrayListCTI.get(2).isDay3(), arrayListCTI.get(2).isDay4());
+            fillRow(v3, arrayListCTI.get(2).getMyClass(), arrayListCTI.get(2).getMyTeacher(), arrayListCTI.get(2).isDay1(), arrayListCTI.get(2).isDay2(), arrayListCTI.get(2).isDay3(), arrayListCTI.get(2).isDay4());
             v4 = mRowContainer.findViewById(R.id.period4);
-            fillRow(v4, arrayListCTI.get(3).getMyClass() , arrayListCTI.get(3).getMyTeacher(), arrayListCTI.get(3).isDay1(), arrayListCTI.get(3).isDay2(), arrayListCTI.get(3).isDay3(), arrayListCTI.get(3).isDay4());
+            fillRow(v4, arrayListCTI.get(3).getMyClass(), arrayListCTI.get(3).getMyTeacher(), arrayListCTI.get(3).isDay1(), arrayListCTI.get(3).isDay2(), arrayListCTI.get(3).isDay3(), arrayListCTI.get(3).isDay4());
             v5 = mRowContainer.findViewById(R.id.period5);
-            fillRow(v5, arrayListCTI.get(4).getMyClass() , arrayListCTI.get(4).getMyTeacher(), arrayListCTI.get(4).isDay1(), arrayListCTI.get(4).isDay2(), arrayListCTI.get(4).isDay3(), arrayListCTI.get(4).isDay4());
+            fillRow(v5, arrayListCTI.get(4).getMyClass(), arrayListCTI.get(4).getMyTeacher(), arrayListCTI.get(4).isDay1(), arrayListCTI.get(4).isDay2(), arrayListCTI.get(4).isDay3(), arrayListCTI.get(4).isDay4());
             v6 = mRowContainer.findViewById(R.id.period6);
-            fillRow(v6, arrayListCTI.get(5).getMyClass() , arrayListCTI.get(5).getMyTeacher(), arrayListCTI.get(5).isDay1(), arrayListCTI.get(5).isDay2(), arrayListCTI.get(5).isDay3(), arrayListCTI.get(5).isDay4());
+            fillRow(v6, arrayListCTI.get(5).getMyClass(), arrayListCTI.get(5).getMyTeacher(), arrayListCTI.get(5).isDay1(), arrayListCTI.get(5).isDay2(), arrayListCTI.get(5).isDay3(), arrayListCTI.get(5).isDay4());
             v7 = mRowContainer.findViewById(R.id.period7);
-            fillRow(v7, arrayListCTI.get(6).getMyClass() , arrayListCTI.get(6).getMyTeacher(), arrayListCTI.get(6).isDay1(), arrayListCTI.get(6).isDay2(), arrayListCTI.get(6).isDay3(), arrayListCTI.get(6).isDay4());
+            fillRow(v7, arrayListCTI.get(6).getMyClass(), arrayListCTI.get(6).getMyTeacher(), arrayListCTI.get(6).isDay1(), arrayListCTI.get(6).isDay2(), arrayListCTI.get(6).isDay3(), arrayListCTI.get(6).isDay4());
             v8 = mRowContainer.findViewById(R.id.period8);
-            fillRow(v8, arrayListCTI.get(7).getMyClass() , arrayListCTI.get(7).getMyTeacher(), arrayListCTI.get(7).isDay1(), arrayListCTI.get(7).isDay2(), arrayListCTI.get(7).isDay3(), arrayListCTI.get(7).isDay4());
+            fillRow(v8, arrayListCTI.get(7).getMyClass(), arrayListCTI.get(7).getMyTeacher(), arrayListCTI.get(7).isDay1(), arrayListCTI.get(7).isDay2(), arrayListCTI.get(7).isDay3(), arrayListCTI.get(7).isDay4());
         }
     }
 

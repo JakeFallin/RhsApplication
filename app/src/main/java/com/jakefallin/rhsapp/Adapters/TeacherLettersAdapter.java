@@ -14,20 +14,17 @@ import java.util.List;
 /**
  * Created by Jake on 5/31/2016.
  */
-public class TeacherLettersAdapter extends RecyclerView.Adapter<TeacherLettersViewHolder>
-{
+public class TeacherLettersAdapter extends RecyclerView.Adapter<TeacherLettersViewHolder> {
     private List<Letter> itemList;
     private Context context;
 
-    public TeacherLettersAdapter(Context context, List<Letter> itemList)
-    {
+    public TeacherLettersAdapter(Context context, List<Letter> itemList) {
         this.itemList = itemList;
         this.context = context;
     }
 
     @Override
-    public TeacherLettersViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
-    {
+    public TeacherLettersViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.teacher_letter_name, null);
         TeacherLettersViewHolder rcv = new TeacherLettersViewHolder(layoutView);
@@ -35,14 +32,12 @@ public class TeacherLettersAdapter extends RecyclerView.Adapter<TeacherLettersVi
     }
 
     @Override
-    public void onBindViewHolder(TeacherLettersViewHolder holder, int position)
-    {
+    public void onBindViewHolder(TeacherLettersViewHolder holder, int position) {
         holder.letter.setText(itemList.get(position).get_letter());
     }
 
     @Override
-    public int getItemCount()
-    {
+    public int getItemCount() {
         return this.itemList.size();
     }
 }

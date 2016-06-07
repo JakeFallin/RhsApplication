@@ -4,8 +4,7 @@ public class ExploreBean {
 
     private String when, where, more, date;
 
-    public ExploreBean(String mWhen, String mWhere, String mMore, String mDate)
-    {
+    public ExploreBean(String mWhen, String mWhere, String mMore, String mDate) {
         when = mWhen;
         where = mWhere;
         more = mMore;

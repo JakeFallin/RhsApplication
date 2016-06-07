@@ -10,17 +10,16 @@ public class AbsenceInfoBean {
     private String location;
     private String period;
 
-    public AbsenceInfoBean(String mlocation, String mperiod)
-    {
+    public AbsenceInfoBean(String mlocation, String mperiod) {
         location = mlocation;
         period = mperiod;
     }
 
-    public String getLocation(){
+    public String getLocation() {
         return location;
     }
 
-    public String getPeriod(){
+    public String getPeriod() {
         return period;
     }
 }

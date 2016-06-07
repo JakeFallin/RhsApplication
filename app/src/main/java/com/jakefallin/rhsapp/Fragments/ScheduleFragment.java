@@ -44,7 +44,6 @@ import java.util.GregorianCalendar;
 
 public class ScheduleFragment extends Fragment {
 
-
     private String jsonResponse;
 
     private ArrayList<Schedule> scheduleListToday;
@@ -86,7 +85,7 @@ public class ScheduleFragment extends Fragment {
         urlJsonObj = s.getString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
 
         makeJsonObjectRequest();
-        final CoordinatorLayout c = (CoordinatorLayout)getActivity().findViewById(R.id.main_content);
+        final CoordinatorLayout c = (CoordinatorLayout) getActivity().findViewById(R.id.main_content);
         getCurrentClass();
 
 
@@ -134,7 +133,7 @@ public class ScheduleFragment extends Fragment {
 
                     // Parsing json object response
                     // response will be a json object
-                    s = "" +  response.get("day");
+                    s = "" + response.get("day");
                     textView.setText("" + s);
 
                     date = "" + response.get("date");
@@ -176,7 +175,7 @@ public class ScheduleFragment extends Fragment {
 
                             }
 
-                        }catch(JSONException e){
+                        } catch (JSONException e) {
                         }
                     }
 
@@ -211,7 +210,8 @@ public class ScheduleFragment extends Fragment {
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         Gson gson = new Gson();
         String json = s.getString("startupInfo", null);
-        Type type = new TypeToken<ArrayList<Startup>>() {}.getType();
+        Type type = new TypeToken<ArrayList<Startup>>() {
+        }.getType();
         arrayList = gson.fromJson(json, type);
 
         String numberOnly = temp.replaceAll("[^0-9]", "");
@@ -245,20 +245,18 @@ public class ScheduleFragment extends Fragment {
             String end = s.getEnd24();
 
 
+            String newStart = start.replaceAll("\\D+", "");
+            String newEnd = end.replaceAll("\\D+", "");
+            int intStart = Integer.parseInt(newStart);
+            int intEnd = Integer.parseInt(newEnd);
 
-                String newStart = start.replaceAll("\\D+", "");
-                String newEnd = end.replaceAll("\\D+", "");
-                int intStart = Integer.parseInt(newStart);
-                int intEnd = Integer.parseInt(newEnd);
-
-                if ((intStart <= intDate) && (intDate <= intEnd)) {
-                    mAdapterToday.setSelected(i);
-                }
+            if ((intStart <= intDate) && (intDate <= intEnd)) {
+                mAdapterToday.setSelected(i);
+            }
         }
     }
 
-    public void save()
-    {
+    public void save() {
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = s.edit();
 

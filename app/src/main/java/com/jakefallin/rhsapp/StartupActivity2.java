@@ -154,7 +154,7 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
                 public void onItemClicked(RecyclerView recyclerView, int position, View v) {
 
                     Startup s = startups.get(position);
-                    showDialog(v.getContext(),s.getTitle(), s.getDescription(),
+                    showDialog(v.getContext(), s.getTitle(), s.getDescription(),
                             s.isCb1(), s.isCb2(), s.isCb3(), s.isCb4(), position);
 
                 }
@@ -191,17 +191,17 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             SharedPreferences.Editor editor = s.edit();
 
 
-                editor.putBoolean("firstTimeSchedule", false);
-                editor.apply();
-                startups.add(new Startup("Period 1", "", true, false, true, true));
-                startups.add(new Startup("Period 2", "", true, true, false, true));
-                startups.add(new Startup("Period 3", "", true, true, true, false));
-                startups.add(new Startup("Period 4", "", false, true, true, true));
-                startups.add(new Startup("Period 5", "", true, false, true, true));
-                startups.add(new Startup("Period 6", "", true, true, false, true));
-                startups.add(new Startup("Period 7", "", true, true, true, false));
-                startups.add(new Startup("Period 8", "", false, true, true, true));
-                startupAdapter.notifyDataSetChanged();
+            editor.putBoolean("firstTimeSchedule", false);
+            editor.apply();
+            startups.add(new Startup("Period 1", "", true, false, true, true));
+            startups.add(new Startup("Period 2", "", true, true, false, true));
+            startups.add(new Startup("Period 3", "", true, true, true, false));
+            startups.add(new Startup("Period 4", "", false, true, true, true));
+            startups.add(new Startup("Period 5", "", true, false, true, true));
+            startups.add(new Startup("Period 6", "", true, true, false, true));
+            startups.add(new Startup("Period 7", "", true, true, true, false));
+            startups.add(new Startup("Period 8", "", false, true, true, true));
+            startupAdapter.notifyDataSetChanged();
 
 //            } else {
 //
@@ -214,7 +214,7 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
 //            }
         }
 
-        public void showDialog(Context context, String name, String desc, boolean m1, boolean m2, boolean m3, boolean m4, final int pos ) {
+        public void showDialog(Context context, String name, String desc, boolean m1, boolean m2, boolean m3, boolean m4, final int pos) {
             final EditText title, teacher;
             Button save, cancel;
             SwitchCompat switchCompat;
@@ -309,8 +309,7 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             finish();
         }
 
-        public void save()
-        {
+        public void save() {
             SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = s.edit();
 

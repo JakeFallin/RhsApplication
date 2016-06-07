@@ -17,12 +17,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+
 import com.jakefallin.rhsapp.Adapters.TeacherLettersAdapter;
 
 import com.jakefallin.rhsapp.Objects.Letter;
 import com.jakefallin.rhsapp.Util.AppController;
 import com.rohit.recycleritemclicksupport.RecyclerItemClickSupport;
+
 import java.util.ArrayList;
+
 /**
  * Created by Jake on 5/31/2016.
  */
@@ -113,12 +116,12 @@ public class TeachersActivity extends AppCompatActivity {
                 });
     }
 
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            // Inflate the menu; this adds items tw the action bar if it is present.
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-            return true;
-        }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items tw the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -136,5 +139,5 @@ public class TeachersActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    }
+}
 

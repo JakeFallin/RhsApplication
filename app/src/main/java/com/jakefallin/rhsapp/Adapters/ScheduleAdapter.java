@@ -3,6 +3,7 @@ package com.jakefallin.rhsapp.Adapters;
 /**
  * Created by Jake on 3/11/2016.
  */
+
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.preference.PreferenceManager;
@@ -27,10 +28,9 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
 
     private List<Schedule> scheduleList;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder  {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView periodText, startText, endText, teacherText;
         RelativeLayout list_row;
-
 
 
         public MyViewHolder(View view) {
@@ -60,12 +60,10 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Schedule s = scheduleList.get(position);
         holder.periodText.setText(s.getPeriod());
-        if(!is24H) {
+        if (!is24H) {
             holder.startText.setText(s.getStart());
             holder.endText.setText(s.getEnd());
-        }
-        else
-        {
+        } else {
             holder.startText.setText(s.getStart24());
             holder.endText.setText(s.getEnd24());
         }
@@ -98,8 +96,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
         return scheduleList.size();
     }
 
-    public void updateList(List<Schedule> data)
-    {
+    public void updateList(List<Schedule> data) {
         scheduleList = data;
         notifyDataSetChanged();
     }

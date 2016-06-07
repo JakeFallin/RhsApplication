@@ -100,6 +100,7 @@ public class AbsencesFragment extends Fragment {
 
         makeJsonObjectRequest();
     }
+
     public void clickSnack(int g, int c) {
         String str = "click group " + String.valueOf(g) + " child " + String.valueOf(c);
         Snackbar.make(listView, str, Snackbar.LENGTH_SHORT)
@@ -214,8 +215,7 @@ public class AbsencesFragment extends Fragment {
         adapter.notifyDataSetChanged();
     }
 
-    public void save()
-    {
+    public void save() {
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = s.edit();
 
@@ -225,23 +225,23 @@ public class AbsencesFragment extends Fragment {
         editor.apply();
     }
 
-    public String getData(String teacherName)
-    {
+    public String getData(String teacherName) {
         String tempData = "";
 
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         Gson gson = new Gson();
         String json = s.getString("scheduleInfo", null);
-        Type type = new TypeToken<ArrayList<Schedule>>() {}.getType();
+        Type type = new TypeToken<ArrayList<Schedule>>() {
+        }.getType();
         arrayList = gson.fromJson(json, type);
 
         String temp = teacherName.substring(teacherName.lastIndexOf(".") + 1).trim();
 
 
-        if(arrayList.size() > 0) {
+        if (arrayList.size() > 0) {
             for (int i = 0; i < arrayList.size(); i++) {
 
-                if(arrayList.get(i).getTeacher().contains(temp)) {
+                if (arrayList.get(i).getTeacher().contains(temp)) {
                     tempData = arrayList.get(i).getTeacher();
 
                 }

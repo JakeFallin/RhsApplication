@@ -32,7 +32,7 @@ public class StartupAdapter extends RecyclerView.Adapter<StartupAdapter.MyViewHo
 
     private List<Startup> startupList;
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder  {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView titleStartup, descriptionStartup;
         public CheckBox cb1, cb2, cb3, cb4;
 
@@ -57,11 +57,8 @@ public class StartupAdapter extends RecyclerView.Adapter<StartupAdapter.MyViewHo
     }
 
 
-
-
-
-
-    public StartupAdapter() {}
+    public StartupAdapter() {
+    }
 
     public StartupAdapter(List<Startup> startupList) {
         this.startupList = startupList;
@@ -92,8 +89,7 @@ public class StartupAdapter extends RecyclerView.Adapter<StartupAdapter.MyViewHo
         return startupList.size();
     }
 
-    public void updateList(List<Startup> data)
-    {
+    public void updateList(List<Startup> data) {
         startupList = data;
     }
 

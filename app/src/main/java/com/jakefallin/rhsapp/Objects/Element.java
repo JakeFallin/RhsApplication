@@ -16,7 +16,6 @@ public class Element {
 
     private View.OnClickListener onClickListener;
 
-
     public Element() {
 
     }

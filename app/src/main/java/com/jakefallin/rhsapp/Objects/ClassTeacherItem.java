@@ -27,8 +27,7 @@ public class ClassTeacherItem {
         day4 = d4;
     }
 
-    public ClassTeacherItem(boolean free)
-    {
+    public ClassTeacherItem(boolean free) {
         myClass = "Free";
         myTeacher = "";
         day1 = true;

@@ -3,6 +3,7 @@ package com.jakefallin.rhsapp.Adapters;
 /**
  * Created by Jake on 4/4/2016.
  */
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -102,7 +103,7 @@ public class TestBaseAdapter extends BaseAdapter implements
         ArrayList<Integer> sectionIndices = new ArrayList<Integer>();
         char lastFirstChar = mTeachers[0].charAt(0); //THIS MAKES IT SO THE FIRST THING DONT SHOW
         sectionIndices.add(0);
-        for (int i = 1 ; i < mTeachers.length; i++) {
+        for (int i = 1; i < mTeachers.length; i++) {
             if (mTeachers[i].charAt(0) != lastFirstChar) {
                 lastFirstChar = mTeachers[i].charAt(0);
                 sectionIndices.add(i);
@@ -158,7 +159,7 @@ public class TestBaseAdapter extends BaseAdapter implements
 
     @Override
     public View getHeaderView(int position, View convertView, ViewGroup parent) {
-            HeaderViewHolder holder;
+        HeaderViewHolder holder;
 
         if (convertView == null) {
             holder = new HeaderViewHolder();

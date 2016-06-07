@@ -3,6 +3,7 @@ package com.jakefallin.rhsapp.Dialog;
 /**
  * Created by Jake on 4/26/2016.
  */
+
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;

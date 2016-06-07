@@ -31,7 +31,7 @@ public class TeacherListAdapter extends RecyclerView.Adapter<TeacherListAdapter.
 
     private List<Teacher> teacherList;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder  {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView first, last, email;
 
         public MyViewHolder(View view) {
@@ -69,8 +69,7 @@ public class TeacherListAdapter extends RecyclerView.Adapter<TeacherListAdapter.
         return teacherList.size();
     }
 
-    public void updateList(List<Teacher> data)
-    {
+    public void updateList(List<Teacher> data) {
         teacherList = data;
         notifyDataSetChanged();
     }

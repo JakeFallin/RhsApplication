@@ -20,19 +20,19 @@ import android.view.MenuItem;
  */
 public class SettingsActivity extends AppCompatActivity {
 
-        private DrawerLayout mDrawerLayout;
-        private Toolbar toolbar;
-        private ActionBar actionBar;
-        // temporary string to show the parsed response
+    private DrawerLayout mDrawerLayout;
+    private Toolbar toolbar;
+    private ActionBar actionBar;
+    // temporary string to show the parsed response
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-            actionBar = getSupportActionBar();
-            actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
-            // Set behavior of Navigation drawer
+        // Set behavior of Navigation drawer
 //            assert navigationView != null;
 //            navigationView.setNavigationItemSelectedListener(
 //                    new NavigationView.OnNavigationItemSelectedListener() {
@@ -58,13 +58,13 @@ public class SettingsActivity extends AppCompatActivity {
 //                            return true;
 //                        }
 //                    });
-            // Adding Floating Action Button to bottom right of main view
+        // Adding Floating Action Button to bottom right of main view
 
-            getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new SettingsFragment())
-                    .commit();
+        getFragmentManager().beginTransaction()
+                .replace(android.R.id.content, new SettingsFragment())
+                .commit();
 
-        }
+    }
 
     public static class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
@@ -135,29 +135,29 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            // Inflate the menu; this adds items to the action bar if it is present.
-            getMenuInflater().inflate(R.menu.menu_main_settings, menu);
-            return true;
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main_settings, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings2) {
+            Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+            startActivity(intent);
+
+        } else if (id == android.R.id.home) {
         }
+        return super.onOptionsItemSelected(item);
+    }
 
-        @Override
-        public boolean onOptionsItemSelected(MenuItem item) {
-            // Handle action bar item clicks here. The action bar will
-            // automatically handle clicks on the Home/Up button, so long
-            // as you specify a parent activity in AndroidManifest.xml.
-            int id = item.getItemId();
-            //noinspection SimplifiableIfStatement
-            if (id == R.id.action_settings2) {
-                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
-                startActivity(intent);
-
-            } else if (id == android.R.id.home) {
-            }
-            return super.onOptionsItemSelected(item);
-        }
-
-    public void onBackPressed(){
+    public void onBackPressed() {
         Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
         startActivity(intent);
     }

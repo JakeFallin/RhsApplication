@@ -139,7 +139,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dummy.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                fabLayout.hide(); return false;
+                fabLayout.hide();
+                return false;
             }
         });
 
@@ -217,17 +218,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        if(v.getId() == R.id.calFab) {
+        if (v.getId() == R.id.calFab) {
             showDialog();
         }
 
-        if(v.getId() == R.id.forwardFab)
-        {
+        if (v.getId() == R.id.forwardFab) {
             showDay(true);
         }
 
-        if(v.getId() == R.id.backwardFab)
-        {
+        if (v.getId() == R.id.backwardFab) {
             showDay(false);
         }
     }
@@ -293,8 +292,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onOptionsItemSelected(item);
     }
 
-    public void showDialog()
-    {
+    public void showDialog() {
         Calendar now = Calendar.getInstance();
 
         int year = now.get(Calendar.YEAR);
@@ -321,7 +319,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onResume();
         DatePickerDialog dpd = (DatePickerDialog) getFragmentManager().findFragmentByTag("Datepickerdialog");
 
-        if(dpd != null) dpd.setOnDateSetListener(this);
+        if (dpd != null) dpd.setOnDateSetListener(this);
     }
 
     @Override
@@ -338,18 +336,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         current.set(year, monthOfYear, dayOfMonth);
 
-        if(monthOfYear < 10)
-        {
-            if(dayOfMonth < 10)
-            {
+        if (monthOfYear < 10) {
+            if (dayOfMonth < 10) {
                 absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
                 dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
                 announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
             } else {
                 absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
                 dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
-                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;            }
-        } else if(dayOfMonth < 10) {
+                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+            }
+        } else if (dayOfMonth < 10) {
             absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
             dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
             announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
@@ -370,8 +367,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public void showDay(boolean next)
-    {
+    public void showDay(boolean next) {
 
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = s.edit();
@@ -387,28 +383,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         monthOfYear++;
 
-        if(next)
-        {
-            dayOfMonth+=1;
+        if (next) {
+            dayOfMonth += 1;
         } else {
-            dayOfMonth-=1;
+            dayOfMonth -= 1;
         }
         Calendar c = Calendar.getInstance();
         current.set((c.get(Calendar.YEAR)), dayOfMonth, c.get(Calendar.DAY_OF_MONTH));
 
 
-        if(monthOfYear < 10)
-        {
-            if(dayOfMonth < 10)
-            {
+        if (monthOfYear < 10) {
+            if (dayOfMonth < 10) {
                 absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
                 dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
                 announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
             } else {
                 absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
                 dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
-                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;            }
-        } else if(dayOfMonth < 10) {
+                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+            }
+        } else if (dayOfMonth < 10) {
             absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
             dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
             announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;

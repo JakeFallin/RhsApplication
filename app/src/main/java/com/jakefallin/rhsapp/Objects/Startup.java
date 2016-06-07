@@ -3,10 +3,6 @@ package com.jakefallin.rhsapp.Objects;
 /**
  * Created by Jake on 5/18/2016.
  */
-import android.util.Pair;
-
-import java.util.List;
-
 
 public class Startup {
 
@@ -24,8 +20,7 @@ public class Startup {
         cb4 = true;
     }
 
-    public Startup(String t, String d, boolean c1, boolean c2, boolean c3, boolean c4)
-    {
+    public Startup(String t, String d, boolean c1, boolean c2, boolean c3, boolean c4) {
         title = t;
         description = d;
         cb1 = c1;
@@ -33,7 +28,6 @@ public class Startup {
         cb3 = c3;
         cb4 = c4;
     }
-
 
 
     public String getDescription() {

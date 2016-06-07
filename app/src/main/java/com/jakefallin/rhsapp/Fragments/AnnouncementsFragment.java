@@ -39,7 +39,6 @@ public class AnnouncementsFragment extends Fragment {
     List<MenuBean> list0;
     List<MenuBean> myList;
 
-
     private ExpandableListView listView;
     private ExpandableAdapter<MenuBean, ExploreBean> adapter;
     private String urlJsonObj = "http://app.ridgewood.k12.nj.us/rhsstu/api/public/getannouncements.php";
@@ -59,7 +58,6 @@ public class AnnouncementsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
 
         adapter = new ExpandableAdapter<MenuBean, ExploreBean>(getContext(), R.layout.announcements_expanded_base_view, R.layout.announcements_expanded_view) {
@@ -90,9 +88,9 @@ public class AnnouncementsFragment extends Fragment {
             @Override
             protected void convertChildView(boolean isLastChild, final ExpandableAdapterHelper helper, ExploreBean item) {
                 helper.setText(R.id.ann_when, item.getWhen())
-                .setText(R.id.ann_where, item.getWhere())
-                .setText(R.id.ann_more, item.getMore())
-                .setText(R.id.ann_date, item.getDate())
+                        .setText(R.id.ann_where, item.getWhere())
+                        .setText(R.id.ann_more, item.getMore())
+                        .setText(R.id.ann_date, item.getDate())
                         .getItemView().setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -110,6 +108,7 @@ public class AnnouncementsFragment extends Fragment {
 
         makeJsonObjectRequest();
     }
+
     public void clickSnack(int g, int c) {
         String str = "click group " + String.valueOf(g) + " child " + String.valueOf(c);
         Snackbar.make(listView, str, Snackbar.LENGTH_SHORT)
@@ -144,7 +143,6 @@ public class AnnouncementsFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
 
     }
@@ -185,7 +183,7 @@ public class AnnouncementsFragment extends Fragment {
                             adapter.add(m);
                             adapter.notifyDataSetChanged();
 
-                        }catch (JSONException e) {
+                        } catch (JSONException e) {
 
                         }
 

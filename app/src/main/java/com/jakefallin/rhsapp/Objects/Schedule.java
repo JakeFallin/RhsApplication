@@ -26,6 +26,7 @@ public class Schedule {
         cb3 = true;
         cb4 = true;
     }
+
     public Schedule(String mPeriod, String mTeacher, String mStart, String mEnd, boolean c1, boolean c2, boolean c3, boolean c4) {
         period = mPeriod;
         start = mStart;
@@ -36,8 +37,8 @@ public class Schedule {
         cb3 = c3;
         cb4 = c4;
     }
-    public Schedule(ClassTeacherItem mCti, ClassTeacherItem mCti2, String mStart, String mEnd)
-    {
+
+    public Schedule(ClassTeacherItem mCti, ClassTeacherItem mCti2, String mStart, String mEnd) {
         period = mCti.getMyClass();
         teacher = mCti.getMyTeacher();
         start = mStart;
@@ -50,7 +51,7 @@ public class Schedule {
     }
 
     public String getStart() {
-        if(start != "") {
+        if (start != "") {
             String[] separated = start.split(":");
             int hour = Integer.parseInt(separated[0]);
             if (hour > 12) {
@@ -63,7 +64,7 @@ public class Schedule {
     }
 
     public String getEnd() {
-        if(end != "") {
+        if (end != "") {
             String[] separated = end.split(":");
             int hour = Integer.parseInt(separated[0]);
             if (hour > 12) {
@@ -71,23 +72,23 @@ public class Schedule {
                 return ("" + hour + ":" + separated[1] + " P.M.");
             }
             return (separated[0] + ":" + separated[1] + " A.M.");
-        }
-        else
+        } else
             return "";
     }
 
     public boolean isSelected() {
         return selected;
     }
+
     public void setSelected(boolean selected) {
         this.selected = selected;
     }
 
-    public String getStart24(){
+    public String getStart24() {
         return start;
     }
 
-    public String getEnd24(){
+    public String getEnd24() {
         return end;
     }
 

@@ -101,7 +101,6 @@ public class CreateDialog extends AnimationDialog implements
     }
 
 
-
     /**
      * Called when the view is attached to the activity.
      */
@@ -131,7 +130,6 @@ public class CreateDialog extends AnimationDialog implements
             }
         }
     }
-
 
 
     @Override
@@ -191,7 +189,6 @@ public class CreateDialog extends AnimationDialog implements
     /**
      * Get the name of an exercise corresponding to a position
      */
-
 
 
     /**
