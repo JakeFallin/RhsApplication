@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp;
 
+/**
+ * Created by Jake on 5/31/2016.
+ */
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -26,9 +30,6 @@ import com.rohit.recycleritemclicksupport.RecyclerItemClickSupport;
 
 import java.util.ArrayList;
 
-/**
- * Created by Jake on 5/31/2016.
- */
 public class TeachersActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;

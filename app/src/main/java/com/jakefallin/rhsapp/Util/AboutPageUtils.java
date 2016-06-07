@@ -1,11 +1,11 @@
 package com.jakefallin.rhsapp.Util;
 
-import android.content.Context;
-import android.content.pm.PackageManager;
-
 /**
  * Created by Jake on 6/1/2016.
  */
+
+import android.content.Context;
+import android.content.pm.PackageManager;
 
 public class AboutPageUtils {
 

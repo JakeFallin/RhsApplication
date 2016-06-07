@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Adapters;
 
+/**
+ * Created by Jake on 5/18/2016.
+ */
+
 import android.content.Context;
 import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
@@ -13,6 +17,8 @@ import android.widget.Spinner;
 
 import com.jakefallin.rhsapp.Objects.Startup;
 import com.jakefallin.rhsapp.R;
+
+//Adapter to show dialog in StartupActivity2
 
 public class DialogAdapter extends BaseAdapter {
 

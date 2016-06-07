@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Fragments;
 
+/**
+ * Created by Jake on 5/9/2016.
+ */
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -32,9 +36,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Jake on 5/9/2016.
- */
 public class AnnouncementsFragment extends Fragment {
     List<MenuBean> list0;
     List<MenuBean> myList;

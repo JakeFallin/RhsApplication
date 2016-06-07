@@ -4253,7 +4253,6 @@ containing a value of this type.
         public static final int center_horizontal=0x7f100024;
         public static final int center_vertical=0x7f100025;
         public static final int center_view=0x7f10011f;
-        public static final int chat=0x7f10016e;
         public static final int checkBox1=0x7f1000f6;
         public static final int checkBox2=0x7f1000f7;
         public static final int checkBox3=0x7f1000f8;
@@ -4503,7 +4502,7 @@ containing a value of this type.
         public static final int teacher_first=0x7f100111;
         public static final int teacher_last=0x7f100112;
         public static final int teacherlist=0x7f1000d1;
-        public static final int teachers=0x7f10016f;
+        public static final int teachers=0x7f10016e;
         public static final int terrain=0x7f10003e;
         public static final int test=0x7f100051;
         public static final int text=0x7f100146;

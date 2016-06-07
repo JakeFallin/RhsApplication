@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Fragments;
 
+/**
+ * Created by Jake on 3/26/2016.
+ */
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;

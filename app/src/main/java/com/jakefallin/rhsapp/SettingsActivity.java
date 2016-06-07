@@ -17,8 +17,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 /**
- * Created by Jake on 3/14/2016.
+ * Created by Jake/Molly on 3/14/2016.
  */
+
 public class SettingsActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -31,36 +32,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar2);
-        navigationView = (NavigationView) findViewById(R.id.nav_view2);
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-
-        assert navigationView != null;
-        navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(MenuItem menuItem) {
-
-                        //highlight which item is selected
-                        int id = menuItem.getItemId();
-
-                        //load TeacherSearch activity
-                        if (id == R.id.teachers) {
-                            Intent intent = new Intent(SettingsActivity.this, TeachersActivity.class);
-                            startActivity(intent);
-                        }
-                        //load chat activity
-                        else if (id == R.id.overview) {
-                            Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
-                            startActivity(intent);
-                        }
-
-                        // Closing drawer on item click
-                        mDrawerLayout.closeDrawers();
-                        return true;
-                    }
-                });
 
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingsFragment())

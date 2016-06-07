@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp;
 
+/**
+ * Created by Jake on 5/2/2016.
+ */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -20,8 +24,9 @@ import com.google.android.gms.auth.api.credentials.Credential;
 import pub.devrel.easygoogle.gac.SignIn;
 
 /**
- * Created by Jake on 5/2/2016.
- */
+  * Unused. Provides Implementation for google sign-in. May be of use in the future.
+  */
+
 public class SignInActivity extends AppCompatActivity implements SignIn.SignInListener, View.OnClickListener {
 
     private Google mGoogle;
@@ -85,10 +90,10 @@ public class SignInActivity extends AppCompatActivity implements SignIn.SignInLi
                 mGoogle.getSignIn().signOut();
                 break;
             case R.id.skip_button:
-                Intent i1 = new Intent(SignInActivity.this, StartupActivity2.class);
+                Intent i1 = new Intent(SignInActivity.this, StartupActivity.class);
                 startActivity(i1);
             case R.id.continue_button:
-                Intent i2 = new Intent(SignInActivity.this, StartupActivity2.class);
+                Intent i2 = new Intent(SignInActivity.this, StartupActivity.class);
                 startActivity(i2);
         }
     }

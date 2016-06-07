@@ -74,7 +74,7 @@ public class Utils {
      * Return the current app version.
      */
     public static String getCurrentAppVersion(Context context) {
-        String currentVersion = Constants.NO_VERSION;
+        String currentVersion = "-1";
         try {
             currentVersion = context
                     .getPackageManager()

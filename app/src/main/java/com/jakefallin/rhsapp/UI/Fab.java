@@ -1,5 +1,10 @@
 package com.jakefallin.rhsapp.UI;
 
+/**
+ * Created by Gordon Wong on 7/17/2015.
+ *
+ * Sample floating action button implementation.
+ */
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,11 +23,6 @@ import android.widget.TextView;
 import com.gordonwong.materialsheetfab.AnimatedFab;
 import com.jakefallin.rhsapp.R;
 
-/**
- * Created by Gordon Wong on 7/17/2015.
- *
- * Sample floating action button implementation.
- */
 public class Fab extends FloatingActionButton implements AnimatedFab {
 
     private static final int FAB_ANIM_DURATION = 200;

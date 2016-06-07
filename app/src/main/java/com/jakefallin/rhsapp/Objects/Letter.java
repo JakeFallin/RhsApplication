@@ -3,6 +3,7 @@ package com.jakefallin.rhsapp.Objects;
 /**
  * Created by Jake on 5/31/2016.
  */
+
 public class Letter {
 
     private String _letter;

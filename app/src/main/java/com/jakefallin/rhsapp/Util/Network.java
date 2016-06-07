@@ -10,8 +10,10 @@ public class Network {
         NetworkInfo i = conMgr.getActiveNetworkInfo();
         if (i == null)
             return false;
+
         if (!i.isConnected())
             return false;
+
         return i.isAvailable();
     }
 }

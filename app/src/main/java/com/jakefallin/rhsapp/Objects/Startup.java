@@ -6,7 +6,6 @@ package com.jakefallin.rhsapp.Objects;
 
 public class Startup {
 
-
     private String title, description;
     private boolean cb1, cb2, cb3, cb4;
 
@@ -24,14 +23,6 @@ public class Startup {
         title = t;
         description = d;
         cb1 = c1;
-        cb2 = c2;
-        cb3 = c3;
-        cb4 = c4;
-    }
-
-
-    public String getDescription() {
-        return description;
     }
 
     public void setDescription(String description) {
@@ -77,5 +68,9 @@ public class Startup {
 
     public void setCb4(boolean cb4) {
         this.cb4 = cb4;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }

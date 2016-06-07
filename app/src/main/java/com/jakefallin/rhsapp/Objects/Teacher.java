@@ -3,10 +3,10 @@ package com.jakefallin.rhsapp.Objects;
 /**
  * Created by Jake on 3/11/2016.
  */
+
 public class Teacher {
 
     private String first, last, email;
-
 
     public Teacher() {
     }

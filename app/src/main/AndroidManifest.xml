@@ -64,7 +64,7 @@
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize" />
 
-        <activity android:name=".StartupActivity2"
+        <activity android:name=".StartupActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="stateHidden|adjustResize"

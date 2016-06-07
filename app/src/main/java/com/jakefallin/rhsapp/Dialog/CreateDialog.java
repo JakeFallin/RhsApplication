@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Dialog;
 
+/**
+ * Created by Jake on 4/26/2016.
+ */
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -26,7 +30,6 @@ import com.jakefallin.rhsapp.UI.FloatLabelLayout;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
 
 /**
  * Dialog for adding additional exercises.

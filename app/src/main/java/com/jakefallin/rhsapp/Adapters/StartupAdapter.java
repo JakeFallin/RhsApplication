@@ -4,20 +4,13 @@ package com.jakefallin.rhsapp.Adapters;
  * Created by Jake on 5/18/2016.
  */
 
-import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.jakefallin.rhsapp.Objects.Startup;
@@ -36,7 +29,6 @@ public class StartupAdapter extends RecyclerView.Adapter<StartupAdapter.MyViewHo
         public TextView titleStartup, descriptionStartup;
         public CheckBox cb1, cb2, cb3, cb4;
 
-
         public MyViewHolder(View view) {
             super(view);
 
@@ -46,16 +38,12 @@ public class StartupAdapter extends RecyclerView.Adapter<StartupAdapter.MyViewHo
             cb2 = (CheckBox) view.findViewById(R.id.cb2);
             cb3 = (CheckBox) view.findViewById(R.id.cb3);
             cb4 = (CheckBox) view.findViewById(R.id.cb4);
-
-
         }
     }
 
     public void doDialog(View v) {
 
-
     }
-
 
     public StartupAdapter() {
     }

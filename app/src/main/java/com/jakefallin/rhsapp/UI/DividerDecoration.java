@@ -3,6 +3,7 @@ package com.jakefallin.rhsapp.UI;
 /**
  * Created by Jake on 4/4/2016.
  */
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;

@@ -131,7 +131,6 @@ public class TeachersListActivity extends AppCompatActivity {
         AppController.getInstance().addToRequestQueue(req);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items tw the action bar if it is present.

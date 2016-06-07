@@ -1,5 +1,8 @@
 package com.jakefallin.rhsapp.Objects;
 
+/**
+ * Created by Molly on 5/23/2016.
+ */
 
 import java.util.ArrayList;
 

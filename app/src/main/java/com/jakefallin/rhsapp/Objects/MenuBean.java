@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Objects;
 
+/**
+ * Created by Jake on 5/27/2016.
+ */
+
 import java.util.List;
 
 public class MenuBean {

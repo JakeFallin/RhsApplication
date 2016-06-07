@@ -16,6 +16,10 @@
 
 package com.jakefallin.rhsapp;
 
+/**
+ * Created by Jake on 3/8/2016.
+ */
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -64,11 +68,6 @@ import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
-
-
-/**
- * Provides UI for the main screen.
- */
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener, DatePickerDialog.OnDateSetListener {
 

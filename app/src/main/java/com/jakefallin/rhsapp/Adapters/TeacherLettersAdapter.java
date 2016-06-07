@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Adapters;
 
+/**
+ * Created by Jake on 5/31/2016.
+ */
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,9 +15,6 @@ import com.jakefallin.rhsapp.R;
 
 import java.util.List;
 
-/**
- * Created by Jake on 5/31/2016.
- */
 public class TeacherLettersAdapter extends RecyclerView.Adapter<TeacherLettersViewHolder> {
     private List<Letter> itemList;
     private Context context;

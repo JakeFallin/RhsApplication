@@ -1234,7 +1234,6 @@ int id center 0x7f100023
 int id center_horizontal 0x7f100024
 int id center_vertical 0x7f100025
 int id center_view 0x7f10011f
-int id chat 0x7f10016e
 int id checkBox1 0x7f1000f6
 int id checkBox2 0x7f1000f7
 int id checkBox3 0x7f1000f8
@@ -1484,7 +1483,7 @@ int id teacher_email 0x7f100113
 int id teacher_first 0x7f100111
 int id teacher_last 0x7f100112
 int id teacherlist 0x7f1000d1
-int id teachers 0x7f10016f
+int id teachers 0x7f10016e
 int id terrain 0x7f10003e
 int id test 0x7f100051
 int id text 0x7f100146

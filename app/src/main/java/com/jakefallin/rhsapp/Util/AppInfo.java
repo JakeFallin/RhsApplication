@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Util;
 
+/**
+ * Created by Jake on 3/22/2016.
+ */
+
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.Context;

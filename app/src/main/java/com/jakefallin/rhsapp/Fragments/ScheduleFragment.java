@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Fragments;
 
+/**
+ * Created by Jake on 4/2/2016.
+ */
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;

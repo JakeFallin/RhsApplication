@@ -21,12 +21,6 @@ import com.jakefallin.rhsapp.Util.AppController;
 
 import java.util.List;
 
-
-/**
- * Created by Jake on 3/11/2016.
- */
-
-
 public class TeacherListAdapter extends RecyclerView.Adapter<TeacherListAdapter.MyViewHolder> {
 
     private List<Teacher> teacherList;

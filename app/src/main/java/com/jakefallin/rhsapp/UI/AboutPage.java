@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.UI;
 
+/**
+ * Created by Jake/Will on 6/1/2016.
+ */
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -25,10 +29,6 @@ import android.widget.TextView;
 
 import com.jakefallin.rhsapp.Objects.Element;
 import com.jakefallin.rhsapp.R;
-
-/**
- * Created by Jake on 6/1/2016.
- */
 
 public class AboutPage {
     private final Context mContext;

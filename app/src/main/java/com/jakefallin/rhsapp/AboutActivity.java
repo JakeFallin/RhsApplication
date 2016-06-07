@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp;
 
+/**
+ * Created by Jake/Will on 6/1/2016.
+ */
+
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -9,10 +13,6 @@ import android.widget.Toast;
 
 import com.jakefallin.rhsapp.Objects.Element;
 import com.jakefallin.rhsapp.UI.AboutPage;
-
-/**
- * Created by Jake on 6/1/2016.
- */
 
 public class AboutActivity extends AppCompatActivity {
 

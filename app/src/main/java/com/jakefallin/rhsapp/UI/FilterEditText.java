@@ -3,6 +3,7 @@ package com.jakefallin.rhsapp.UI;
 /**
  * Created by Jake on 4/26/2016.
  */
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.InputFilter;
@@ -10,7 +11,6 @@ import android.util.AttributeSet;
 import android.widget.EditText;
 
 import com.jakefallin.rhsapp.R;
-
 
 /**
  * EditText which will take an minimum and maximum value and apply it to a filter.

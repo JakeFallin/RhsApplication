@@ -7,10 +7,10 @@ import android.view.View;
 
 import com.jakefallin.rhsapp.R;
 
-
 /**
  * Animator class based of https://plus.google.com/118417777153109946393/posts/FABaJhRMCuy
  */
+
 public class CustomObjectAnimator {
 
     /**

@@ -1,10 +1,11 @@
 package com.jakefallin.rhsapp.Objects;
 
+/**
+ * Created by Molly on 3/11/2016.
+ */
+
 import java.util.List;
 
-/**
- * Created by Jake on 3/11/2016.
- */
 public class AbsenceBean {
 
     private String name;

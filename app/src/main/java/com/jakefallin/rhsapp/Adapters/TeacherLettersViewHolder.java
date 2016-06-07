@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Adapters;
 
+/**
+ * Created by Jake on 5/31/2016.
+ */
+
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
@@ -7,9 +11,6 @@ import android.widget.Toast;
 
 import com.jakefallin.rhsapp.R;
 
-/**
- * Created by Jake on 5/31/2016.
- */
 public class TeacherLettersViewHolder extends RecyclerView.ViewHolder implements
         View.OnClickListener {
     public TextView letter;

@@ -1,5 +1,9 @@
 package com.jakefallin.rhsapp.Util;
 
+/**
+ * Created by Jake on 4/8/2016.
+ */
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;

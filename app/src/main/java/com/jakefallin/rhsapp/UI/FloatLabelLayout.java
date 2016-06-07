@@ -1,5 +1,12 @@
 package com.jakefallin.rhsapp.UI;
 
+
+/**
+ * Created by Gordon Wong on 7/17/2015.
+ *
+ * Sample floating action button implementation.
+ */
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Build;

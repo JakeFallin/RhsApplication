@@ -20,6 +20,8 @@ import com.jakefallin.rhsapp.Util.AppController;
 
 import java.util.List;
 
+//Adapter to show dialog in ScheduleFragment
+
 public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyViewHolder> {
 
     private SharedPreferences.Editor mEditor;

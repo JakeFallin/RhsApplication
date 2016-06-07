@@ -37,9 +37,6 @@ public class MinMaxInputFilter implements InputFilter {
         return "";
     }
 
-    /*
-     * Return if the entered number is in range.
-     */
     private boolean isInRange(double a, double b, double c) {
         return b > a ? c >= a && c <= b : c >= b && c <= a;
     }
