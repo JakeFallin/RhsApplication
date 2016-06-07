@@ -211,55 +211,8 @@ public class AbsencesFragment extends Fragment {
 
     private void absenceData() {
 
-
         adapter.notifyDataSetChanged();
     }
-
-//    public void makeNotification(ArrayList<String> s)
-//    {
-//
-//        int mId = 1;
-//        String absentTeachers = "";
-//
-//        if(s.size() == 0)
-//        {
-//            absentTeachers = "No Absent Teachers Today!";
-//        } else {
-//            absentTeachers = "Your Teachers: ";
-//
-//            for(int i = 0; i < s.size(); i++)
-//            {
-//                absentTeachers = absentTeachers + s.get(i) + ", ";
-//            }
-//            absentTeachers = absentTeachers + " Are Absent Today!";
-//        }
-//
-//        NotificationCompat.Builder mBuilder =
-//                new NotificationCompat.Builder(AppController.getAppContext())
-//                        .setSmallIcon(R.drawable.ic_cal)
-//                        .setContentTitle("Teacher Absences")
-//                        .setContentText(absentTeachers)
-//                        .setAutoCancel(true)
-//                        .setPriority(Notification.PRIORITY_HIGH)
-//                        .setVibrate(new long[] {100, 200, 300});
-//
-//        Intent resultIntent = new Intent(AppController.getAppContext(), MainActivity.class);
-//        TaskStackBuilder stackBuilder = TaskStackBuilder.create(AppController.getAppContext());
-//        stackBuilder.addParentStack(MainActivity.class);
-//
-//        stackBuilder.addNextIntent(resultIntent);
-//        PendingIntent resultPendingIntent =
-//                stackBuilder.getPendingIntent(
-//                        0,
-//                        PendingIntent.FLAG_UPDATE_CURRENT
-//                );
-//
-//        mBuilder.setContentIntent(resultPendingIntent);
-//        NotificationManager mNotificationManager = (NotificationManager)
-//                AppController.getAppContext().getSystemService(Context.NOTIFICATION_SERVICE);
-//        mNotificationManager.notify(mId, mBuilder.build());
-//
-//    }
 
     public void save()
     {

@@ -1,13 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land\\mdtp_done_background_color_dark.xml",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\drawable-land\\mdtp_done_background_color_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land\\mdtp_done_background_color.xml",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\drawable-land\\mdtp_done_background_color.xml"
-    },
-    {
         "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land\\mdtp_done_background_color_dark.xml",
         "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\drawable-land\\mdtp_done_background_color_dark.xml"
     },

@@ -19,8 +19,7 @@ public class TeacherLettersAdapter extends RecyclerView.Adapter<TeacherLettersVi
     private List<Letter> itemList;
     private Context context;
 
-    public TeacherLettersAdapter(Context context,
-                                     List<Letter> itemList)
+    public TeacherLettersAdapter(Context context, List<Letter> itemList)
     {
         this.itemList = itemList;
         this.context = context;

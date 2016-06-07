@@ -2,11 +2,13 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:focusable="true"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingBottom="10dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="2dp"
+
     android:clickable="true"
     android:background="?android:attr/selectableItemBackground"
     android:orientation="vertical">
@@ -15,20 +17,20 @@
         android:id="@+id/teacher_first"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="John" />
 
     <TextView
         android:id="@+id/teacher_last"
         android:textSize="20dp"
+        android:layout_marginStart="8dp"
         android:textStyle="bold"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Doe"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/teacher_email"
-        android:layout_toRightOf="@+id/teacher_email" />
+        android:layout_toRightOf="@+id/teacher_first" />
 
     <TextView
         android:id="@+id/teacher_email"
@@ -37,5 +39,18 @@
         android:layout_width="wrap_content"
         android:layout_below="@id/teacher_first"
         android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_separator_height"
+        android:layout_below="@id/teacher_email"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/about_item_text_color"
+        android:padding="2dp" />
 
 </RelativeLayout>

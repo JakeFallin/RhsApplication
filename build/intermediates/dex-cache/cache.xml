@@ -1,3 +1,439 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Jake\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_d98759214e263a424dd57d663de5dcb338a77da3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.ogaclejapan.smarttablayout\library\1.6.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="773103b47908c3026873309dd5d968b7fc6556eb">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.ogaclejapan.smarttablayout-library-1.6.0_988936399f852b6ff24ea55ba24fe8c88f03d44e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-8.4.0_28c6e88ed66d7980a75d915a1169965c6a0a74b2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_6bf99d8e902ec89d78795f50892ab25ff366b71b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.riontech.staggeredtextgridview\staggeredtextgridview\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="6fc1a0f8aa996253d1486797c41d86592a04731a">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.riontech.staggeredtextgridview-staggeredtextgridview-1.0.1_bccdc163315df1988286bce95fd1f54538ec20ef\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_d209a881004e1d1cb9aee4cbb653593ce8085752\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_e97831f40a564f7495c3fb3cda16d50574c913cd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_0e8c805e241713ed575cc39addc26516b03166de\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.orhanobut\dialogplus\1.11\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="184f86117c6463267c1f0deba84d4853cb165c40">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.orhanobut-dialogplus-1.11_0baf38b71d135ca30744e81e26e89d1ec763bda9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.github.CymChad\BaseRecyclerViewAdapterHelper\v1.7.4\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="48321bc3e65791efc046a9b662e5bfb254e90c89">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.CymChad-BaseRecyclerViewAdapterHelper-v1.7.4_d60be2387df914d3f7fb984821d49bffab2e3549\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_e0c587927c1f86d1aa4a471147ee3794fcff9810\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.github.fafaldo\fab-toolbar\1.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="914655ea8bbd3367dd5cebf2282e636cd3d95389">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.fafaldo-fab-toolbar-1.2.0_f330293c2faafa9c13222f093a3085f1f6863ff2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_3eb1893f772b69b4afded84727233c1aa92b8730\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_c7fe1219ea44379e5f5d8a482aeb55b815f5480d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_4ede390c06f96060001c22ac874a06b529fa373e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_5209c4f5965bc573c8a50b37974f0cfdcfd94d5c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_2a163296f0ff7bb0881f51a588decd507e99003f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-8.4.0_5004ef419a4c491b46690dcb0933298055b35b31\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.4.0_a52afd86ca8f2efa0debaef1a5ec290093721882\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-8.4.0_f4483fd4353cf06fb67f07e780ed89be34156eec\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\pub.devrel\easygoogle\0.2.4\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="e020d5ceb06a44dafb7ac1930d069be8d0b1d39a">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\pub.devrel-easygoogle-0.2.4_420919bb4cee0285e44b2bf51a69617e1ab186a9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_f6a5833d4cc8ae4c70bda736bce123d5cae81816\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_d25e2e1e504d5cb7519971a47e32b4dbac7125a0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.4.0_ced8e45e49d80494d997c2c9aaf69afb14ecb559\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_ad19eefc56f0bb8d9d8343d567e51941feb7c020\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.yqritc\recyclerview-flexibledivider\1.2.9\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="3a03e6e942bcc46a8d01c2da5d8a2147ecab113d">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.yqritc-recyclerview-flexibledivider-1.2.9_71895a14e34c0e5a1352b35e95fb33faa0be59db\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_4652df07852e8a6264042d138334371a6fd89902\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_c7e2e99327de04022f956deaa516bd6bc92edcd0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.4.0_bdb7bddfa5e872268118003a19402f7562d7bb8d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_46bac1a0f3ef1bdb7e7b91a2a6b4950dc53c870a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.github.thepacific\adapter\1.0.5\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="e6b8cfa07508fcb50e5361bc3c78918c86ea6b48">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.thepacific-adapter-1.0.5_94df09def484dc8ca9605efb42af2a0efe98c60f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.4.0_5e3185e8edcd96efb28e2bd8d80c5fefa1b97029\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_25d4acebb3bc88105ca1f5ebef10b979135724a4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-8.4.0_0cd923cdc8e92045374ceba372b88503339404f1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.4.0_56e85c7084d92a537783598b7f1c387b4d4db2a4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_39d6eef5e3d5577818f709262bd40239470ceaae\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.rohit.recycleritemclicksupport\recycleritemclicksupport\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="15597ee56eff82c59895b0f46aa6e19d6dbe1a24">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rohit.recycleritemclicksupport-recycleritemclicksupport-1.0.1_92343aee33899fe8f5ee99254d3fb13068c521a3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.github.asyl.animation\arcanimator\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="31dbe885ef6a9d6a88412750e85784f60b95cb90">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.asyl.animation-arcanimator-1.0.0_b7b2e49019f403026e0b70cc3a9dd5d7a7c70e93\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_d9311973c2d3acdcbc18eee2ad9813de83349976\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.9.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="d4b681a6084ef53d2825520fc77fcaddde351f64">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getbase-floatingactionbutton-1.9.1_e5d4ad203b822caeb23f355f2b83dfbcb06d925a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="6be1b1a4dc26c558dcb3f0a0760d24ed9ddefba6">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9fa3f1e538840aba82356b0b3b8df838b1cebe57\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_267d0e6bd5129d779cd918a720348d86b713aa5d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_6ec3c1d45a230ea669ddc0fe82ffdc44a26efb14\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.ogaclejapan.smarttablayout\utils-v4\1.6.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="7b6793eb8e6071cd11334f1b0af8dca2e662a561">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.ogaclejapan.smarttablayout-utils-v4-1.6.0_4a305e4a2cfcd3062c4a66c0578fb76a769745bf\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_0707500a95879b939817026e104d9cbc70c37e76\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.github.medyo\fancybuttons\1.8\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="58e388ae2d0befce87e90395f775ddec05e72b6c">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.medyo-fancybuttons-1.8_ecceff647d04a2f1ba35df211ceb041641f872f7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_d1a773e65bd6a9afb4a91e8ed334471b08db1f26\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_02fe4d8b8ca7b6061dbc9436ac49d3895a7feac9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_af41946a5ed90eb4d2fdc6d3c84746387b8f49ce\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_6e24bb19ae54c7b48ba4f90edddb66de233a3ea4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.4.0_55268bcda952befb7efb21e9ac0de5e3780c4580\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\2.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="a95fd025efad7b05be3d29737bec37652e0fdb9e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wdullaer-materialdatetimepicker-2.3.0_b6bd4832310d343509f221a9270b2be02e293693\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="3464ccb059a0113d75159659b450435eff2d3fba">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_392095f007625bc61d5791d9451db6fd58adfedd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-8.4.0_6e07f8614dbf179c38d490f1370f77f1ca7a363e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.tonicartos\superslim\0.4.13\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="8adfd82229a5f0a129469305587557199017219e">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.tonicartos-superslim-0.4.13_3a397f721f69b675d52094a881a406b6f03fb970\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.gordonwong\material-sheet-fab\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="34fc70f7f1d882154d876ea763f05977d9945699">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.gordonwong-material-sheet-fab-1.2.1_e4300b67147220535e5abe0dbb769d2f6072ed2c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\se.emilsjolander\stickylistheaders\2.7.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="3bdf77dbe58e0ec53a0178de532372e7c00859b9">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\se.emilsjolander-stickylistheaders-2.7.0_0bda31221788adf4a9d75161b18500933b143a91\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-8.4.0_10558a84386ecd11c0d73ba372b1bebf2c0dc83b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_58247f06a95ec29397e9d86e49e165b07c2fba52\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_1d6e609a5cbe31030fa8484c094529875664a58c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\exploded-aar\com.github.halysongoncalves\pugnotification\1.8.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="dd72e971ae6a7defa5e184470b749583c9a31923">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.halysongoncalves-pugnotification-1.8.1_d3e46c3184eb97e2e4d0f8fb5133a32082f6af21\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Jake\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.4.0_7b3dbd1ccf8a7f2e4a3ed3e3223c2d4b9e9c1017\classes.dex" />
+    </item>
+
+</items>

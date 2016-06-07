@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="22"
+    api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="1039214144603234" >
+    timestamp="296580477054250"
+    token="7442292033072025057" >
 
     <task
         name="javac"
@@ -23,19 +24,19 @@
         location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\res\resources-debug.ap_"
         type="RESOURCES" />
 
-    <build timestamp="1039109449176026" >
+    <build timestamp="296221170983432" >
         <artifact
             location="C:\Users\Jake\Documents\rhsapp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1039156526282311"
-        verifier="CLASS_ADDED" >
+        timestamp="296544551495191"
+        verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-            type="DEX" />
+            location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\builds\debug\296544551495191\classes.dex"
+            type="RELOAD_DEX" />
     </build>
-    <build timestamp="1039214144603234" >
+    <build timestamp="296580477054250" >
         <artifact
             location="C:\Users\Jake\Documents\rhsapp\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />

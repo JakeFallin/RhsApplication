@@ -35,14 +35,17 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.jakefallin.rhsapp.Adapters.DialogAdapter;
 
 import com.jakefallin.rhsapp.Adapters.StartupAdapter;
 import com.jakefallin.rhsapp.Dialog.CreateDialog;
+import com.jakefallin.rhsapp.Objects.Schedule;
 import com.jakefallin.rhsapp.Objects.Startup;
 import com.jakefallin.rhsapp.Util.AppController;
 import com.rohit.recycleritemclicksupport.RecyclerItemClickSupport;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 /**
@@ -120,11 +123,8 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
 
         StartupAdapter startupAdapter;
         ArrayList<Startup> startups;
-
         RecyclerView recyclerView;
-
         DialogAdapter da;
-
         Dialog dialog = null;
         FloatingActionButton floatingActionButton;
 
@@ -139,9 +139,6 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
             firstTime();
-
-
-
         }
 
         @Override
@@ -150,7 +147,7 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
 
             View view = inflater.inflate(R.layout.startup, container, false);
             recyclerView = (RecyclerView) view.findViewById(R.id.startupRV);
-
+            firstTime();
 
             RecyclerItemClickSupport.addTo(recyclerView).setOnItemClickListener(new RecyclerItemClickSupport.OnItemClickListener() {
                 @Override
@@ -167,15 +164,12 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             floatingActionButton.setImageResource(R.drawable.ic_favorite_black_24dp);
             floatingActionButton.setOnClickListener(fabClickListener);
 
-
             recyclerView.setAdapter(startupAdapter);
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-
             return view;
         }
-
 
         @Override
         public void onInflate(Context context, AttributeSet attrs,
@@ -183,38 +177,22 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             super.onInflate(context, attrs, savedInstanceState);
         }
 
-
         View.OnClickListener fabClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
             }
         };
-//
-//        public void onBackPressed() {
-//
-//            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(AppController.getAppContext());
-//            SharedPreferences.Editor e = sharedPrefs.edit();
-//            Gson gson = new Gson();
-//            String json = gson.toJson(startups);
-//            e.putString("startupInfo", json);
-//            e.putBoolean("first", false);
-//            e.apply();
-//            Intent intent = new Intent(getActivity(), MainActivity.class);
-//            startActivity(intent);
-//
-//        }
 
         public void firstTime() {
 
-//            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(AppController.getAppContext());
-//            SharedPreferences.Editor editor = sharedPrefs.edit();
-//            boolean first = sharedPrefs.getBoolean("firstStartup", true);
-//
-//            if(first) {
-//
-//                editor.putBoolean("firstStartup", false);
-//                editor.apply();
+            SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
+            boolean firstTimeSchedule = s.getBoolean("firstTimeSchedule", true);
+            SharedPreferences.Editor editor = s.edit();
+
+
+                editor.putBoolean("firstTimeSchedule", false);
+                editor.apply();
                 startups.add(new Startup("Period 1", "", true, false, true, true));
                 startups.add(new Startup("Period 2", "", true, true, false, true));
                 startups.add(new Startup("Period 3", "", true, true, true, false));
@@ -228,8 +206,8 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
 //            } else {
 //
 //                Gson gson = new Gson();
-//                String json = sharedPrefs.getString("startupInfo", null);
-//                Type type = new TypeToken<ArrayList<Startup>>() {}.getType();
+//                String json = s.getString("scheduleInfo", null);
+//                Type type = new TypeToken<ArrayList<Schedule>>() {}.getType();
 //                startups = gson.fromJson(json, type);
 //                startupAdapter.notifyDataSetChanged();
 //
@@ -323,15 +301,12 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             dialog.show();
         }
 
-
-
         public void onBackPressed() {
 
             save();
             Intent intent = new Intent(StartupActivity2.this, MainActivity.class);
             startActivity(intent);
             finish();
-
         }
 
         public void save()
@@ -340,7 +315,7 @@ public class StartupActivity2 extends AppCompatActivity implements CreateDialog.
             SharedPreferences.Editor editor = s.edit();
 
             editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
-            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
+            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
             editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
 
             Gson gson = new Gson();

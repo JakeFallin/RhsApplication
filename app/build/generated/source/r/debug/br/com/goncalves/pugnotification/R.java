@@ -20,8 +20,8 @@ public final class R {
 		public static final int pugnotification_text_size_title = 0x7f0a00e3;
 	}
 	public static final class drawable {
-		public static final int pugnotification_ic_launcher = 0x7f0200c6;
-		public static final int pugnotification_ic_placeholder = 0x7f0200c7;
+		public static final int pugnotification_ic_launcher = 0x7f0200c7;
+		public static final int pugnotification_ic_placeholder = 0x7f0200c8;
 	}
 	public static final class id {
 		public static final int notification_content_information = 0x7f100153;

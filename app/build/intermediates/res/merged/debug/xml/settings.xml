@@ -16,12 +16,7 @@
 
     <PreferenceCategory
         android:title="Prefs">
-        ​
-        <CheckBoxPreference
-            android:title="Receive Notifications"
-            android:summary="Want to receive Push Notifications ?"
-            android:key="receiveNotifications"
-            android:defaultValue="true" />
+        
         ​
         <CheckBoxPreference
             android:title="24 Hour Clock"

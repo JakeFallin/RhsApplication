@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\layout-w270dp-h560dp-v13\\mdtp_date_picker_dialog.xml",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\layout-w270dp-h560dp\\mdtp_date_picker_dialog.xml"
-    },
-    {
         "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\layout-w270dp-h560dp-v13\\mdtp_date_picker_dialog.xml",
         "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.3.0\\res\\layout-w270dp-h560dp\\mdtp_date_picker_dialog.xml"
     }

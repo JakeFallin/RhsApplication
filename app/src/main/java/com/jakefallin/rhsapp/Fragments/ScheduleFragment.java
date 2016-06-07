@@ -50,7 +50,8 @@ public class ScheduleFragment extends Fragment {
     private ArrayList<Schedule> scheduleListToday;
 
     private ScheduleAdapter mAdapterToday;
-    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/rhsstu/api/public/mobile/getdashboard.php";
+    private String s;
+    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php";
     private static String TAG = MainActivity.class.getSimpleName();
 
     private ArrayList<String> period = new ArrayList<String>();
@@ -58,10 +59,8 @@ public class ScheduleFragment extends Fragment {
     TextView textView;
     int dayToday = 0;
 
-
     ArrayList<Startup> arrayList;
     private ArrayList<String> customTeachers;
-
 
     public static ScheduleFragment newInstance(boolean today) {
         ScheduleFragment myFragment = new ScheduleFragment();
@@ -73,7 +72,6 @@ public class ScheduleFragment extends Fragment {
         return myFragment;
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +82,7 @@ public class ScheduleFragment extends Fragment {
         mAdapterToday = new ScheduleAdapter(scheduleListToday);
 
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
-        urlJsonObj = s.getString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
+        urlJsonObj = s.getString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
 
         makeJsonObjectRequest();
         final CoordinatorLayout c = (CoordinatorLayout)getActivity().findViewById(R.id.main_content);
@@ -100,7 +98,7 @@ public class ScheduleFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_schedule, container, false);
         textView = (TextView) view.findViewById(R.id.scheduleDay);
 
-        textView.setText("" + dayToday);
+        textView.setText("" + s);
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rvSchedule);
 
@@ -135,18 +133,11 @@ public class ScheduleFragment extends Fragment {
 
                     // Parsing json object response
                     // response will be a json object
-                    JSONObject today = response.getJSONObject("today");
-                    JSONObject tomorrow = response.getJSONObject("next");
+                    s = "" +  response.get("day");
 
-                    boolean nonDay = today.getBoolean("nonDay");
+                    textView.setText(s);
 
-                    dayToday = today.getInt("day");
-                    textView.setText("" + dayToday);
-                    Log.d("" + dayToday, "" + dayToday);
-                    String messageToday = today.getString("message");
-
-                    JSONArray scheduleToday = today.getJSONArray("schedule");
-
+                    JSONArray scheduleToday = response.getJSONArray("schedule");
 
                     for (int i = 0; i < scheduleToday.length(); i++) {
                         try {
@@ -155,7 +146,7 @@ public class ScheduleFragment extends Fragment {
 
                             String e = scheduleObj.getString("end");
                             String s = scheduleObj.getString("start");
-                            String p = scheduleObj.getString("period");
+                            String p = scheduleObj.getString("label");
 
                             Startup c = getData(p);
 
@@ -171,19 +162,19 @@ public class ScheduleFragment extends Fragment {
                             } else {
 
 
-                            if (c.getTitle().equals("")) {
-                                Schedule temp = new Schedule(p, s, e);
+                                if (c.getTitle().equals("")) {
+                                    Schedule temp = new Schedule(p, s, e);
+                                    scheduleListToday.add(temp);
+                                    mAdapterToday.notifyDataSetChanged();
+                                }
+                                Schedule temp = new Schedule(c.getTitle(), c.getDescription(), s, e, c.isCb1(), c.isCb2(), c.isCb3(), c.isCb4());
                                 scheduleListToday.add(temp);
                                 mAdapterToday.notifyDataSetChanged();
-                            }
-                            Schedule temp = new Schedule(c.getTitle(), c.getDescription(), s, e);
-                            scheduleListToday.add(temp);
-                            mAdapterToday.notifyDataSetChanged();
 
+                            }
+
+                        }catch(JSONException e){
                         }
-
-                            }catch(JSONException e){
-                            }
                     }
 
                 } catch (JSONException e) {
@@ -220,7 +211,6 @@ public class ScheduleFragment extends Fragment {
         Type type = new TypeToken<ArrayList<Startup>>() {}.getType();
         arrayList = gson.fromJson(json, type);
 
-
         String numberOnly = temp.replaceAll("[^0-9]", "");
         Integer yo = 1;
         if (numberOnly.length() > 0) {
@@ -231,7 +221,6 @@ public class ScheduleFragment extends Fragment {
 
         return startup;
     }
-
 
     public void getCurrentClass() {
         Calendar c = Calendar.getInstance();
@@ -262,7 +251,6 @@ public class ScheduleFragment extends Fragment {
                 if ((intStart <= intDate) && (intDate <= intEnd)) {
                     mAdapterToday.setSelected(i);
                 }
-
         }
     }
 

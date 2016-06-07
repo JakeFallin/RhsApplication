@@ -18,17 +18,10 @@
         android:title="Prefs">
         ​
         <CheckBoxPreference
-            android:title="Receive Notifications"
-            android:summary="Want to receive Push Notifications ?"
-            android:key="receiveNotifications"
-            android:defaultValue="true" />
-        ​
-        <CheckBoxPreference
             android:title="24 Hour Clock"
             android:summary="Would you like to use a 24 hour clock?"
             android:key="24h"
             android:defaultValue="false" />
-        ​
         ​
     </PreferenceCategory>
 
@@ -43,7 +36,5 @@
                 android:targetClass="com.jakefallin.rhsapp.AboutActivity" />
         </Preference>
         ​</PreferenceCategory>
-    ​
-    ​
     ​
 </PreferenceScreen>

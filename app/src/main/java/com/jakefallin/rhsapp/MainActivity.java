@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private NavigationView navigationView;
     private FABToolbarLayout fabLayout;
     private View backFab, forwardFab, calFab, containerFab, dummy;
-    private Calendar lastDayOfSchool, firstDayOfSchool;
+    private Calendar lastDayOfSchool, firstDayOfSchool, current;
 
 
     @Override
@@ -91,19 +91,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = s.edit();
+        editor.putBoolean("firstTimeSchedule", false);
+
         PreferenceManager.setDefaultValues(this, R.xml.settings, false);
-
-        SharedPreferences sharedPreferences = getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        boolean firstTime = sharedPreferences.getBoolean("first", true);
-
-
-
+        boolean firstTime = s.getBoolean("first", true);
 
         lastDayOfSchool = Calendar.getInstance();
         lastDayOfSchool.set(2016, 5, 20);
         firstDayOfSchool = Calendar.getInstance();
         firstDayOfSchool.set(2015, 8, 8);
+        current = Calendar.getInstance();
 
         //Adapter to make tab load a specific fragment within viewpager
         FragmentPagerItemAdapter a = new FragmentPagerItemAdapter(
@@ -198,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SharedPreferences.Editor editor = s.edit();
 
         editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
-        editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
+        editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
         editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
         editor.apply();
         finish();
@@ -302,6 +301,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int month = now.get(Calendar.MONTH);
         int day = now.get(Calendar.DAY_OF_MONTH);
 
+
         DatePickerDialog dpd = DatePickerDialog.newInstance(
                 MainActivity.this, year, month, day);
 
@@ -335,6 +335,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String announcementsURL;
 
         monthOfYear++;
+
+        current.set(year, monthOfYear, dayOfMonth);
 
         if(monthOfYear < 10)
         {
@@ -378,7 +380,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String dashboardURL;
         String announcementsURL;
 
-        Calendar now = Calendar.getInstance();
+        Calendar now = current;
         int year = now.get(Calendar.YEAR);
         int monthOfYear = now.get(Calendar.MONTH);
         int dayOfMonth = now.get(Calendar.DAY_OF_MONTH);
@@ -391,6 +393,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             dayOfMonth-=1;
         }
+        Calendar c = Calendar.getInstance();
+        current.set((c.get(Calendar.YEAR)), dayOfMonth, c.get(Calendar.DAY_OF_MONTH));
+
 
         if(monthOfYear < 10)
         {
