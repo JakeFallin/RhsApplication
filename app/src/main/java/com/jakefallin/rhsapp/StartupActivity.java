@@ -19,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SwitchCompat;
+import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -125,6 +126,7 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
         ArrayList<Startup> startups;
         RecyclerView recyclerView;
         DialogAdapter da;
+        Toolbar toolbar;
         Dialog dialog = null;
         FloatingActionButton floatingActionButton;
 
@@ -138,7 +140,6 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
             dialog.setContentView(R.layout.dialog_add_class);
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-            firstTime();
         }
 
         @Override
@@ -148,6 +149,7 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
             View view = inflater.inflate(R.layout.startup, container, false);
             recyclerView = (RecyclerView) view.findViewById(R.id.startupRV);
             firstTime();
+
 
             RecyclerItemClickSupport.addTo(recyclerView).setOnItemClickListener(new RecyclerItemClickSupport.OnItemClickListener() {
                 @Override
@@ -193,14 +195,24 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
 
             editor.putBoolean("firstTimeSchedule", false);
             editor.apply();
-            startups.add(new Startup("Period 1", "", true, false, true, true));
-            startups.add(new Startup("Period 2", "", true, true, false, true));
-            startups.add(new Startup("Period 3", "", true, true, true, false));
-            startups.add(new Startup("Period 4", "", false, true, true, true));
-            startups.add(new Startup("Period 5", "", true, false, true, true));
-            startups.add(new Startup("Period 6", "", true, true, false, true));
-            startups.add(new Startup("Period 7", "", true, true, true, false));
-            startups.add(new Startup("Period 8", "", false, true, true, true));
+            //disabled
+//            startups.add(new Startup("Period 1", "", true, false, true, true));
+//            startups.add(new Startup("Period 2", "", true, true, false, true));
+//            startups.add(new Startup("Period 3", "", true, true, true, false));
+//            startups.add(new Startup("Period 4", "", false, true, true, true));
+//            startups.add(new Startup("Period 5", "", true, false, true, true));
+//            startups.add(new Startup("Period 6", "", true, true, false, true));
+//            startups.add(new Startup("Period 7", "", true, true, true, false));
+//            startups.add(new Startup("Period 8", "", false, true, true, true));
+
+            startups.add(new Startup("Period 1", "", false, false, false, false));
+            startups.add(new Startup("Period 2", "", false, false, false, false));
+            startups.add(new Startup("Period 3", "", false, false, false, false));
+            startups.add(new Startup("Period 4", "", false, false, false, false));
+            startups.add(new Startup("Period 5", "", false, false, false, false));
+            startups.add(new Startup("Period 6", "", false, false, false, false));
+            startups.add(new Startup("Period 7", "", false, false, false, false));
+            startups.add(new Startup("Period 8", "", false, false, false, false));
             startupAdapter.notifyDataSetChanged();
 
 //            } else {
@@ -240,10 +252,16 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
             switchCompat = (SwitchCompat) view.findViewById(R.id.switch_free);
             spinner = (Spinner) view.findViewById(R.id.spinner);
 
-            cb1.setChecked(m1);
-            cb2.setChecked(m2);
-            cb3.setChecked(m3);
-            cb4.setChecked(m4);
+            //disabled
+//            cb1.setChecked(m1);
+//            cb2.setChecked(m2);
+//            cb3.setChecked(m3);
+//            cb4.setChecked(m4);
+
+            cb1.setChecked(false);
+            cb2.setChecked(false);
+            cb3.setChecked(false);
+            cb4.setChecked(false);
 
             title.setHint(name);
             teacher.setHint(desc);
@@ -252,10 +270,17 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
                 @Override
                 public void onClick(View v) {
                     Startup s;
+                    //disabled
+//                    if (title.getText().toString().length() == 0) {
+//                        s = new Startup("Period " + (pos + 1), teacher.getText().toString(), cb1.isChecked(), cb2.isChecked(), cb3.isChecked(), cb4.isChecked());
+//                    } else {
+//                        s = new Startup(title.getText().toString(), teacher.getText().toString(), cb1.isChecked(), cb2.isChecked(), cb3.isChecked(), cb4.isChecked());
+//                    }
+
                     if (title.getText().toString().length() == 0) {
-                        s = new Startup("Period " + (pos + 1), teacher.getText().toString(), cb1.isChecked(), cb2.isChecked(), cb3.isChecked(), cb4.isChecked());
+                        s = new Startup("Period " + (pos + 1), teacher.getText().toString(), false, false, false, false);
                     } else {
-                        s = new Startup(title.getText().toString(), teacher.getText().toString(), cb1.isChecked(), cb2.isChecked(), cb3.isChecked(), cb4.isChecked());
+                        s = new Startup(title.getText().toString(), teacher.getText().toString(), false,false, false, false);
                     }
                     startups.set(pos, s);
                     startupAdapter.notifyDataSetChanged();
@@ -314,7 +339,7 @@ public class StartupActivity extends AppCompatActivity implements CreateDialog.o
             SharedPreferences.Editor editor = s.edit();
 
             editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
-            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
+            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
             editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
 
             Gson gson = new Gson();

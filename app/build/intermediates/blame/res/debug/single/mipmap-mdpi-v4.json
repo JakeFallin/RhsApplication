@@ -1,26 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\googleg_color.png",
-        "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\src\\main\\res\\mipmap-mdpi\\googleg_color.png"
+        "merged": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\jakeicon.png",
+        "source": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\src\\main\\res\\mipmap-mdpi\\jakeicon.png"
     },
     {
-        "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\googleg_color.png",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-mdpi\\googleg_color.png"
-    },
-    {
-        "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\jakeicon.png",
-        "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\src\\main\\res\\mipmap-mdpi\\jakeicon.png"
-    },
-    {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\jakeicon.png",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\src\\main\\res\\mipmap-mdpi\\jakeicon.png"
+        "merged": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\googleg_color.png",
+        "source": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\src\\main\\res\\mipmap-mdpi\\googleg_color.png"
     }
 ]

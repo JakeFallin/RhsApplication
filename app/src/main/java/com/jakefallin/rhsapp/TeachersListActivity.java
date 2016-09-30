@@ -39,7 +39,7 @@ public class TeachersListActivity extends AppCompatActivity {
     private TeacherListAdapter adapter;
     private Toolbar toolbar;
 
-    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/extra/teachers.php?query=a";
+    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/api/rhs/extra/teachers.php?query=a";
     private static String TAG = MainActivity.class.getSimpleName();
     private RecyclerView recyclerView;
 
@@ -55,7 +55,7 @@ public class TeachersListActivity extends AppCompatActivity {
 
 
         SharedPreferences sp = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
-        urlJsonObj = sp.getString("query", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/extra/teachers.php?query=a");
+        urlJsonObj = sp.getString("query", "http://app.ridgewood.k12.nj.us/api/rhs/extra/teachers.php?query=a");
 
         teacherList = new ArrayList<Teacher>();
         adapter = new TeacherListAdapter(teacherList);

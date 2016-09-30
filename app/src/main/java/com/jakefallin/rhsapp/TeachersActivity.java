@@ -71,7 +71,7 @@ public class TeachersActivity extends AppCompatActivity {
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
 
-                String s = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/extra/teachers.php?query=";
+                String s = "http://app.ridgewood.k12.nj.us/api/rhs/extra/teachers.php?query=";
                 s += letters[position];
 
                 SharedPreferences sp = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);

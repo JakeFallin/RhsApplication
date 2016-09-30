@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v21\\about_icon_link.xml",
-        "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi-v21\\about_icon_link.xml"
+        "merged": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v21\\about_icon_google_play.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi-v21\\about_icon_google_play.xml"
     },
     {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v21\\about_icon_link.xml",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi-v21\\about_icon_link.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v21\\about_icon_google_play.xml",
-        "source": "C:\\Users\\Jake\\Desktop\\rhs\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi-v21\\about_icon_google_play.xml"
-    },
-    {
-        "merged": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v21\\about_icon_google_play.xml",
-        "source": "C:\\Users\\Jake\\Documents\\rhsapp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi-v21\\about_icon_google_play.xml"
+        "merged": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v21\\about_icon_link.xml",
+        "source": "C:\\Users\\Jake\\Desktop\\RHSApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi-v21\\about_icon_link.xml"
     }
 ]

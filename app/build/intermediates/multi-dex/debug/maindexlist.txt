@@ -105,6 +105,7 @@ android/support/v4/view/ViewCompat$ViewCompatImpl.class
 android/support/design/widget/BottomSheetBehavior$BottomSheetCallback.class
 com/getbase/floatingactionbutton/FloatingActionButton.class
 android/support/v7/widget/RecyclerView$ViewHolder.class
+com/jakefallin/rhsapp/StartupActivity$StartupFragment.class
 android/support/v7/widget/ChildHelper$Callback.class
 com/google/android/gms/ads/internal/formats/zzg.class
 android/support/v4/widget/MaterialProgressDrawable.class
@@ -504,7 +505,6 @@ com/google/android/gms/gcm/GcmReceiver.class
 com/google/android/gms/ads/doubleclick/PublisherAdRequest.class
 com/google/android/gms/internal/zzcc.class
 android/support/design/R.class
-com/jakefallin/rhsapp/StartupActivity2$StartupFragment.class
 com/jakefallin/rhsapp/TeachersListActivity.class
 com/google/android/gms/internal/zzjc.class
 com/google/android/gms/auth/api/signin/internal/SignInConfiguration.class
@@ -977,7 +977,6 @@ android/support/design/widget/HeaderBehavior.class
 com/google/gson/annotations/Expose.class
 com/google/android/gms/gcm/OneoffTask.class
 android/support/v4/media/MediaBrowserCompat$MediaItem.class
-com/jakefallin/rhsapp/StartupActivity2.class
 android/support/design/widget/TabItem.class
 com/google/android/gms/analytics/internal/Command.class
 android/support/v4/view/accessibility/AccessibilityNodeInfoCompat.class
@@ -1036,6 +1035,7 @@ com/google/android/gms/measurement/internal/zzaj.class
 android/support/v4/util/Pools$Pool.class
 com/google/android/gms/internal/zzhq.class
 com/google/android/gms/internal/zzhs.class
+com/jakefallin/rhsapp/StartupActivity.class
 android/support/v4/app/FragmentActivity$HostCallbacks.class
 com/google/android/gms/auth/firstparty/shared/zzd.class
 android/support/v4/media/VolumeProviderCompat$Callback.class

@@ -33,13 +33,23 @@
         android:layout_width="match_parent"
         android:gravity="center_horizontal" />
 
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="1-1-2016"
+        android:layout_marginTop="4dp"
+        android:textSize="40dp"
+        android:layout_below="@id/scheduleDay"
+        android:id="@+id/scheduleDate1"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
         android:paddingBottom="@dimen/md_keylines"
-        android:layout_below="@id/scheduleDay"
+        android:layout_below="@id/scheduleDate1"
         android:layout_alignParentBottom="true"
         android:scrollbars="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />

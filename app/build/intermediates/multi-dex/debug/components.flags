@@ -1,5 +1,5 @@
--injars 'C:\Users\Jake\Desktop\rhs\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'C:\Users\Jake\Desktop\rhs\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'C:\Users\Jake\Desktop\RHSApp\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\Jake\Desktop\RHSApp\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
 -libraryjars 'C:\Users\Jake\AppData\Local\Android\Sdk\build-tools\24.0.0-preview\lib\shrinkedAndroid.jar'
 
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration 'C:\Users\Jake\Desktop\rhs\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'C:\Users\Jake\Desktop\RHSApp\app\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep class com.jakefallin.rhsapp.Util.AppController {
@@ -38,7 +38,7 @@
     <init>();
 }
 
--keep class com.jakefallin.rhsapp.StartupActivity2 {
+-keep class com.jakefallin.rhsapp.StartupActivity {
     <init>();
 }
 

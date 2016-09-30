@@ -10,7 +10,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.jakefallin.rhsapp"
-            android:targetClass="com.jakefallin.rhsapp.StartupActivity2" />
+            android:targetClass="com.jakefallin.rhsapp.StartupActivity" />
     </Preference>
     ​</PreferenceCategory>
 

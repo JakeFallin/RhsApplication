@@ -189,7 +189,6 @@ public class AbsencesFragment extends Fragment {
             public void onErrorResponse(VolleyError error) {
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
 
-                // hide the progress dialog
             }
         });
 
@@ -198,27 +197,67 @@ public class AbsencesFragment extends Fragment {
 
         adapter.notifyDataSetChanged();
 
-
-        ArrayList<String> aSchedule = new ArrayList<>();
-
-        String p = String.valueOf(count);
-        Log.e("TESTY", p);
-
-//        for(int i = 0; i < absenceList.size(); i++)
-//        {
-//            String s = getData(absenceList.get(i).getName());
-//            Log.e("TESTY", s);
-//            aSchedule.add(s);
-//        }
-
-
     }
+    
+    //not in use but saved for future reference
+    private void makeJsonObjectRequestOld() {
 
-    private void absenceData() {
+        called = true;
+        final JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
+                urlJsonObj, null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d(TAG, response.toString());
+
+                try {
+                    JSONArray absencesToday = response.getJSONArray("absences");
+                    String name = "";
+                    AbsenceInfoBean Loc;
+
+                    for (int i = 0; i < absencesToday.length(); i++) {
+                        try {
+
+                            name = absencesToday.getJSONObject(i).getString("name");
+                            List<AbsenceInfoBean> locations = new ArrayList<>();
+                            JSONArray infoInAbsence = new JSONArray(absencesToday.getJSONObject(i).getString("info"));
+                            AbsenceBean temp = new AbsenceBean(name);
+
+                            for (int j = 0; j < infoInAbsence.length(); j++) {
+                                try {
+                                    Loc = new AbsenceInfoBean(infoInAbsence.getJSONObject(j).getString("location"), infoInAbsence.getJSONObject(j).getString("reason"));
+                                    locations.add(Loc);
+                                } catch (JSONException e) {
+                                }
+                            }
+                            temp.setAbsenceInfoBeanList(locations);
+                            list0.add(temp);
+                            adapter.add(temp);
+                            adapter.notifyDataSetChanged();
+                        } catch (JSONException e) {
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                VolleyLog.d(TAG, "Error: " + error.getMessage());
+
+            }
+        });
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(jsonObjReq);
 
         adapter.notifyDataSetChanged();
+
     }
 
+    //not in use but saved for future reference
     public void save() {
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = s.edit();
@@ -229,6 +268,7 @@ public class AbsencesFragment extends Fragment {
         editor.apply();
     }
 
+    //not in use but saved for future reference
     public String getData(String teacherName) {
         String tempData = "";
 
@@ -253,6 +293,4 @@ public class AbsencesFragment extends Fragment {
         }
         return tempData;
     }
-
-
 }

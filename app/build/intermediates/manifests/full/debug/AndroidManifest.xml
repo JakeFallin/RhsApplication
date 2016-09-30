@@ -82,7 +82,7 @@
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.jakefallin.rhsapp.StartupActivity2"
+            android:name="com.jakefallin.rhsapp.StartupActivity"
             android:configChanges="orientation|screenSize"
             android:label="StartupActivity2"
             android:screenOrientation="portrait"

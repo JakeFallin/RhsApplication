@@ -108,6 +108,7 @@ public class AnnouncementsFragment extends Fragment {
         urlJsonObj = s.getString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
 
         makeJsonObjectRequest();
+
     }
 
     public void clickSnack(int g, int c) {
@@ -145,9 +146,7 @@ public class AnnouncementsFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
     }
-
 
     private void makeJsonObjectRequest() {
         final JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
@@ -166,13 +165,12 @@ public class AnnouncementsFragment extends Fragment {
                     for (int i = 0; i < announcements.length(); i++) {
 
                         try {
-                            Log.d("!!!!!!", "!!!!!");
 
                             title = announcements.getJSONObject(i).getString("title");
                             when = announcements.getJSONObject(i).getString("when");
                             where = announcements.getJSONObject(i).getString("where");
                             more = announcements.getJSONObject(i).getString("more");
-                            date = announcements.getJSONObject(i).getString("date");
+                            date = announcements.getJSONObject(i).getString("endDate");
 
                             MenuBean m = new MenuBean(title);
                             List<ExploreBean> l = new ArrayList<>();
@@ -187,7 +185,6 @@ public class AnnouncementsFragment extends Fragment {
                         } catch (JSONException e) {
 
                         }
-
 
                     }
                 } catch (JSONException e) {

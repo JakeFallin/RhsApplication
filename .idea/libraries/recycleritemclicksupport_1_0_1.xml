@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="recycleritemclicksupport-1.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.rohit.recycleritemclicksupport/recycleritemclicksupport/1.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.rohit.recycleritemclicksupport/recycleritemclicksupport/1.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rohit.recycleritemclicksupport/recycleritemclicksupport/1.0.1/8edb8ae38389bfff6617775503ec7c69c2393a44/recycleritemclicksupport-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

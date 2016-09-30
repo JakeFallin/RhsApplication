@@ -49,18 +49,21 @@ import java.util.GregorianCalendar;
 public class ScheduleFragment extends Fragment {
 
     private String jsonResponse;
-
     private ArrayList<Schedule> scheduleListToday;
 
     private ScheduleAdapter mAdapterToday;
     private String s;
+    private String s1;
+
     private String date;
-    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php";
+    private String urlJsonObj = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php";
     private static String TAG = MainActivity.class.getSimpleName();
 
     private ArrayList<String> period = new ArrayList<String>();
 
     TextView textView;
+    TextView textView1;
+
     int dayToday = 0;
 
     ArrayList<Startup> arrayList;
@@ -82,11 +85,10 @@ public class ScheduleFragment extends Fragment {
 
         scheduleListToday = new ArrayList<Schedule>();
         customTeachers = new ArrayList<String>();
-
         mAdapterToday = new ScheduleAdapter(scheduleListToday);
 
         SharedPreferences s = AppController.getAppContext().getSharedPreferences("app", Context.MODE_PRIVATE);
-        urlJsonObj = s.getString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
+        urlJsonObj = s.getString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
 
         makeJsonObjectRequest();
         final CoordinatorLayout c = (CoordinatorLayout) getActivity().findViewById(R.id.main_content);
@@ -101,7 +103,9 @@ public class ScheduleFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_schedule, container, false);
         textView = (TextView) view.findViewById(R.id.scheduleDay);
+        textView1 = (TextView) view.findViewById(R.id.scheduleDate1);
 
+        textView1.setText("" + s1);
         textView.setText("" + s);
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rvSchedule);
@@ -137,11 +141,16 @@ public class ScheduleFragment extends Fragment {
 
                     // Parsing json object response
                     // response will be a json object
+                    int ss = response.getInt("day");
                     s = "" + response.get("day");
-                    textView.setText("" + s);
+                    if(ss == 0)
+                        textView.setText("No School");
+                    else
+                        textView.setText("" + s);
 
-                    date = "" + response.get("date");
 
+                    s1 = "" + response.get("date");
+                    textView1.setText("" + s1);
 
                     JSONArray scheduleToday = response.getJSONArray("schedule");
 

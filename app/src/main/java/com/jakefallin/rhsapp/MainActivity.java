@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SharedPreferences.Editor editor = s.edit();
 
         editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
-        editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
+        editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
         editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
         editor.apply();
         finish();
@@ -287,7 +287,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             SharedPreferences.Editor editor = s.edit();
 
             editor.putString("absenceURL", "http://app.ridgewood.k12.nj.us/api/rhs/absences.php");
-            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php");
+            editor.putString("dashboardURL", "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php");
             editor.putString("announcementsURL", "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php");
             editor.apply();
             finish();
@@ -346,22 +346,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (monthOfYear < 10) {
             if (dayOfMonth < 10) {
-                absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
-                dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
-                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
+                absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
+                dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
+                announcementsURL = "http://app.ridgewood.k12.nj.usapi/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
             } else {
-                absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
-                dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
-                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+                absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+                dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+                announcementsURL = "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
             }
         } else if (dayOfMonth < 10) {
-            absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
-            dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
-            announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
+            absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
+            dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
+            announcementsURL = "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
         } else {
-            absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
-            dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
-            announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
+            absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
+            dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
+            announcementsURL = "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
         }
 
         Log.e("ABSENCE", dashboardURL);
@@ -402,22 +402,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (monthOfYear < 10) {
             if (dayOfMonth < 10) {
-                absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
-                dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
-                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
+                absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
+                dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
+                announcementsURL = "http://app.ridgewood.k12.nj.usapi/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-0" + dayOfMonth;
             } else {
-                absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
-                dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
-                announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+                absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+                dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
+                announcementsURL = "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php?date=" + year + "-0" + monthOfYear + "-" + dayOfMonth;
             }
         } else if (dayOfMonth < 10) {
-            absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
-            dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/dashboard.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
-            announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
+            absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
+            dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/dashboard.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
+            announcementsURL = "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-0" + dayOfMonth;
         } else {
-            absenceURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
-            dashboardURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
-            announcementsURL = "http://app.ridgewood.k12.nj.us/new-rhs-website/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
+            absenceURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
+            dashboardURL = "http://app.ridgewood.k12.nj.us/api/rhs/absences.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
+            announcementsURL = "http://app.ridgewood.k12.nj.us/api/rhs/announcements.php?date=" + year + "-" + monthOfYear + "-" + dayOfMonth;
         }
 
         editor.putString("absenceURL", absenceURL);
